@@ -51,6 +51,9 @@ header .nav-link{
     .navbar-text {
         font-size:  15px;
     }
+    .navbar {
+        padding-top: env(safe-area-inset-top);
+    }
 }
 .navbar .nav-link:hover {
     color: var(--primary-color) !important;
