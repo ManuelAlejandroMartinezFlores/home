@@ -33,16 +33,35 @@ markup:
 
 Menus:
   main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+    # - identifier: projects
+    #   name: Projects
+    #   title: Projects
+    #   url: /blog
+    #   weight: 1
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
+    - identifier: education
+      name: Education
+      url: "#education"
+      weight: 0
+
+    - identifier: honors
+      name: Honors
+      url: "#honors"
+      weight: 0
+
+    - identifier: contact
+      name: Contact
+      url: "#contact"
+      weight: 0
+
+    # - identifier: honors
+    #   name: Honors
+    #   url: "#honors"
+    #   weight: 0
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -127,12 +146,12 @@ params:
       showOnScrollUp : true
     enableSeparator: false
     menus:
-      disableAbout: false
-      disableExperience: false
-      disableEducation: false
-      disableProjects: false
-      disableAchievements: false
-      disableContact: false
+      disableAbout: true
+      disableExperience: true
+      disableEducation: true
+      disableProjects: true
+      disableAchievements: true
+      disableContact: true
 
   # Hero
   hero:
@@ -250,167 +269,114 @@ params:
   # Education
   education:
     enable: true
-    # title: "Custom Name"
+    title: "Education"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "B.Sc. in Applied Mathematics"
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
-        content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          name: "Universidad del Valle de Guatemala"
+          # url: "https://example.org"
+        date: "2021 - 2025"
+        # GPA: "3.8 out of 5.0"
+        # content: |-
+        #     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        #     - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
 
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-
-    education:
+  honors:
     enable: true
-    # title: "Custom Name"
+    title: "Honors and awards"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "B.Sc. in Applied Mathematics"
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: "Universidad del Valle de Guatemala"
+          # url: "https://example.org"
+        date: "2021 - 2025"
+        # GPA: "3.8 out of 5.0"
         content: |-
-          Extracurricular Activities
             - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-
+            - Tempora esse, eaque de
+   
   # Achievements
-  achievements:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievement.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievement.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievement.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+  # achievements:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - title: Google kickstart runner
+  #       content: I solved all problems with optimal solution.
+  #       url: https://example.com
+  #       image: /images/achievement.jpg
+  #     - title: Facebook Hackathon Winner
+  #       content: Developed a product using Artificial Intelligence.
+  #       image: /images/achievement.jpg
+  #     - title: Hugo Profile
+  #       content: Developed a theme and getting 1K+ downloads per month.
+  #       url: "https://github.com/gurusabarish/hugo-profile"
+  #       image: /images/achievement.jpg
+  #     - title: Microsoft Imagine Runner
+  #       content: We are developed a product which can help others.
+  #     - title: Google Summer of Code
+  #       content: Contributed to a open source project.
+  #       url: https://example.com
 
   # projects
-  projects:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+  # projects:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - title: Hugo Profile
+  #       content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+  #       image: /images/sigma.svg
+  #       featured:
+  #         name: Demo
+  #         link: /blog
+  #       badges:
+  #         - "Hugo"
+  #         - "Bootstrap"
+  #         - "Javascript"
+  #       links:
+  #         - icon: fa fa-envelope
+  #           url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+  #         - icon: fab fa-github
+  #           url: https://github.com/gurusabarish/hugo-profile
+  #         - icon: fab fa-twitter
+  #           url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+  #     - title: Image Converter
+  #       content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+  #       image: /images/projects/converter.jpg
+  #       featured:
+  #         name: Demo
+  #         link: https://django-converter.herokuapp.com
+  #       badges:
+  #         - "Django"
+  #         - "Bootstrap"
+  #       links:
+  #         - icon: fab fa-github
+  #           url: https://github.com/gurusabarish/converter
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+  #     - title: Hugo Profile V2
+  #       content: A clean and simple Hugo template for personal portfolio and blog.
+  #       image: /images/projects/profile2.jpg
+  #       featured:
+  #         name: Demo V2
+  #         link: https://hugo-profile-2.netlify.app
+  #       badges:
+  #         - "Hugo"
+  #         - "Bootstrap"
+  #         - "Javascript"
+  #       links:
+  #         - icon: fab fa-github
+  #           url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:
     enable: true
-    # title: "Custom Name"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    btnName: Mail me
-    btnLink: mailto:gurusabarisha@gmail.com
+    title: "Contact"
+    content: |-
+        My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you! <br> My e-mail is: manuelalejandromartinezf at gmail dot com.
+    # btnName: Mail me
+    # btnLink: mailto:gurusabarisha@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -418,16 +384,16 @@ params:
     #   messageCaption: "Enter your message here"
     #   messageRows: 5
 
-  footer:
-    recentPosts:
-      path: "blogs"
-      count: 3
-      title: Recent Posts
-      enable: true
-      disableFeaturedImage: false
-    socialNetworks:
-      github: https://github.com/ManuelAlejandroMartinezFlores
-      linkedin: https://linkedin.com/in/manuelamf
+  # footer:
+  #   recentPosts:
+  #     path: blog
+  #     count: 3
+  #     title: Recent Projects
+  #     enable: true
+  #     disableFeaturedImage: false
+  #   socialNetworks:
+  #     github: https://github.com/ManuelAlejandroMartinezFlores
+  #     linkedin: https://linkedin.com/in/manuelamf
 
 
   # List pages like blogs and posts
