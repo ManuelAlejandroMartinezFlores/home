@@ -3,6 +3,9 @@ languageCode: "en-us"
 title: "Manuel Martinez"
 theme: hugo-profile
 
+relativeURLs: true
+canonifyURLs: true
+
 outputs:
   home:
     - "HTML"
