@@ -1,4 +1,4 @@
-baseURL: "https://manuelalejandromartinezflores.github.io/home/"
+baseURL: "https://hugo-profile.netlify.app"
 languageCode: "en-us"
 title: "Manuel Martinez"
 theme: hugo-profile
