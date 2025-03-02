@@ -423,7 +423,7 @@ header .navbar.animate {
         padding: 1rem;
         font-size: 15px;
     }
-    #education .container > h3 {
+    #education .container > h5 {
         font-size: 20px;
     }
 }
@@ -515,7 +515,7 @@ header .navbar.animate {
         border-radius: 1.5rem;
         font-size: 15px;
     }
-    #education .container > h3 {
+    #education .container > h5 {
         font-size: 20px;
     }
 }
