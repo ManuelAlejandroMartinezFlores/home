@@ -507,7 +507,8 @@ header .navbar.animate {
 
 @media all and (max-width:768px) {
     #honors .card .card-body {
-        padding: 1rem 1rem;
+        padding: 3rem;
+        border-radius: 1.5rem;
     }
 }
 
