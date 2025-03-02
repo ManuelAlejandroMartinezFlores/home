@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>https://manuelalejandromartinezflores.github.io/home/tags/</link>
+    <link>http://localhost:1313/home/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 14 Feb 2025 14:38:33 +0200</lastBuildDate>
-    <atom:link href="https://manuelalejandromartinezflores.github.io/home/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/home/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adritian</title>
-      <link>https://manuelalejandromartinezflores.github.io/home/tags/adritian/</link>
+      <link>http://localhost:1313/home/tags/adritian/</link>
       <pubDate>Fri, 14 Feb 2025 14:38:33 +0200</pubDate>
-      <guid>https://manuelalejandromartinezflores.github.io/home/tags/adritian/</guid>
+      <guid>http://localhost:1313/home/tags/adritian/</guid>
       <description></description>
     </item>
     <item>
       <title>Guide</title>
-      <link>https://manuelalejandromartinezflores.github.io/home/tags/guide/</link>
+      <link>http://localhost:1313/home/tags/guide/</link>
       <pubDate>Fri, 14 Feb 2025 14:38:33 +0200</pubDate>
-      <guid>https://manuelalejandromartinezflores.github.io/home/tags/guide/</guid>
+      <guid>http://localhost:1313/home/tags/guide/</guid>
       <description></description>
     </item>
     <item>
       <title>Lorem-Ipsum</title>
-      <link>https://manuelalejandromartinezflores.github.io/home/tags/lorem-ipsum/</link>
+      <link>http://localhost:1313/home/tags/lorem-ipsum/</link>
       <pubDate>Fri, 21 Jun 2024 14:38:33 +0200</pubDate>
-      <guid>https://manuelalejandromartinezflores.github.io/home/tags/lorem-ipsum/</guid>
+      <guid>http://localhost:1313/home/tags/lorem-ipsum/</guid>
       <description></description>
     </item>
     <item>
       <title>Sample</title>
-      <link>https://manuelalejandromartinezflores.github.io/home/tags/sample/</link>
+      <link>http://localhost:1313/home/tags/sample/</link>
       <pubDate>Fri, 21 Jun 2024 14:38:33 +0200</pubDate>
-      <guid>https://manuelalejandromartinezflores.github.io/home/tags/sample/</guid>
+      <guid>http://localhost:1313/home/tags/sample/</guid>
       <description></description>
     </item>
   </channel>

@@ -26,11 +26,11 @@ draft = false
  >}}
 
 {{< platform-links >}}
-    {{< link icon="square-facebook" url="https://facebook.com/yourpage" >}}
-    {{< link icon="square-twitter" url="https://twitter.com/yourpage" >}}
+    <!-- {{< link icon="square-facebook" url="https://facebook.com/yourpage" >}}
+    {{< link icon="square-twitter" url="https://twitter.com/yourpage" >}} -->
     {{< link icon="linkedin" url="https://www.linkedin.com/in/adrianmoreno/" >}}
     {{< link icon="square-github" url="https://github.com/zetxek" >}}
-    {{< link icon="x-twitter" url="https://twitter.com/zetxek" >}}
+    <!-- {{< link icon="x-twitter" url="https://twitter.com/zetxek" >}}
     {{< link icon="dribbble" url="#" >}}
     {{< link icon="behance" url="#" >}}
     {{< link icon="youtube" url="#" >}}
@@ -44,7 +44,7 @@ draft = false
     {{< link icon="user" url="https://www.adrianmoreno.info/" >}}
     {{< link icon="quote-left" url="https://www.adrianmoreno.info/" >}}
     {{< link icon="cloud-arrow-down" url="https://www.adrianmoreno.info/" >}}
-    {{< link icon="square-xing" url="https://www.adrianmoreno.info/" >}}
+    {{< link icon="square-xing" url="https://www.adrianmoreno.info/" >}} -->
 
 {{< /platform-links >}}
 
@@ -61,7 +61,7 @@ draft = false
     button1_text="Visit Example"
     button1_icon="icon-globe"
     button2_text="All experience"
-    button2_url="home/experience"
+    button2_url="/experience"
     button3_text="Button #3"
     button3_url="/experience"
     social_links="aaa"
