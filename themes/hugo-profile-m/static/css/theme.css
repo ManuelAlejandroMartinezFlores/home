@@ -54,3 +54,16 @@ body *::selection {
     color: var(--text-color) !important;
     background-color: var(--primary-color) !important;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color); /* Match your site's background */
+}
+
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    body {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
