@@ -385,7 +385,7 @@ header .navbar.animate {
 
 /* Education */
 
-#education .container > h3 {
+#education .container > h5 {
     color: var(--text-secondary-color) !important;
 }
 
