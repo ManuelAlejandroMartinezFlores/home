@@ -44,6 +44,11 @@ header .nav-link{
     opacity: 0.95;
     font-size: 40px;
 } 
+@media all and (max-width:768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
 .navbar .nav-link:hover {
     color: var(--primary-color) !important;
 }
