@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hugo-profile.netlify.app/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2025-03-01T21:49:43-06:00</lastmod>
   </url><url>
-    <loc>https://hugo-profile.netlify.app/</loc>
+    <loc>/</loc>
     <lastmod>2025-03-01T21:49:43-06:00</lastmod>
   </url><url>
-    <loc>https://hugo-profile.netlify.app/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://hugo-profile.netlify.app/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
