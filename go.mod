@@ -1,4 +1,4 @@
-module github.com/ManuelAlejandroMartinezFlores/hp
+module github.com/ManuelAlejandroMartinezFlores/home
 
 go 1.24.0
 
