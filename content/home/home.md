@@ -61,9 +61,9 @@ draft = false
     button1_text="Visit Example"
     button1_icon="icon-globe"
     button2_text="All experience"
-    button2_url="home/experience"
+    button2_url="./experience"
     button3_text="Button #3"
-    button3_url="home/experience"
+    button3_url="./experience"
     social_links="aaa"
 >}}
 ## Experience (list)
