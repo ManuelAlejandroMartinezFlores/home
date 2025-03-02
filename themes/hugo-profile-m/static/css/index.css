@@ -420,7 +420,11 @@ header .navbar.animate {
 
 @media all and (max-width:768px) {
     #education .card .card-body {
-        padding: 0 0;
+        padding: 1rem 1rem;
+        font-size: 15px;
+    }
+    #education .container > h3 {
+        font-size: 20px;
     }
 }
 
@@ -509,7 +513,7 @@ header .navbar.animate {
     #honors .card .card-body {
         padding: 1rem;
         border-radius: 1.5rem;
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 
