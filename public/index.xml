@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manuel Martinez</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Manuel Martinez</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Mar 2025 23:57:02 -0600</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>B1</title>
-      <link>/blog/b1/</link>
+      <link>//localhost:1313/blog/b1/</link>
       <pubDate>Sat, 01 Mar 2025 23:57:02 -0600</pubDate>
-      <guid>/blog/b1/</guid>
+      <guid>//localhost:1313/blog/b1/</guid>
       <description>&lt;p&gt;B!&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Sat, 01 Mar 2025 21:49:43 -0600</pubDate>
-      <guid>/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description>&lt;p&gt;About&lt;/p&gt;</description>
     </item>
   </channel>

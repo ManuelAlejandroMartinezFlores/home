@@ -1,7 +1,7 @@
 # baseURL: "https://hugo-profile.netlify.app"
 languageCode: "en-us"
 title: "Manuel Martinez"
-theme: hugo-profile
+theme: hugo-profile-m
 
 relativeURLs: true
 canonifyURLs: true
