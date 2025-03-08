@@ -30,6 +30,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  math:
+    enable: true
 
 Menus:
   main:
@@ -165,8 +167,8 @@ params:
     title: "Manuel Alejandro Martínez Flores."
     subtitle: "Mathematician"
     content: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus ut augue scelerisque fringilla. Vivamus molestie dui sit amet metus sollicitudin ullamcorper. Integer facilisis arcu dignissim felis accumsan, at lobortis nulla faucibus. Nullam mi diam, efficitur ullamcorper pulvinar ac, dignissim vitae mauris. Donec ultrices mi non ex pulvinar, nec accumsan neque porta. Curabitur luctus scelerisque metus nec sollicitudin. Nulla quis neque sit amet leo vestibulum euismod. Integer condimentum molestie nulla id imperdiet. Pellentesque semper tortor eget ante consectetur congue. Phasellus dignissim elit vitae tempus dignissim. Aenean tempus urna mauris, et ornare lectus mattis at. Maecenas ut luctus est. Cras vitae iaculis orci. Duis semper lectus nisi, vitae aliquam erat accumsan egestas.
-    # "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+      I am an Applied Mathematics undergraduate student from Guatemala. Right now I am interested in working in analysis and PDE, 
+      specificaly in pseudo-differential operators.
     image: /images/Foto.jpg
     bottomImage:
       enable: true
@@ -292,15 +294,12 @@ params:
     title: "Honors and awards"
     index: false
     items:
-      - title: "B.Sc. in Applied Mathematics"
+      - title: "Beca de liderazgo en ciencias"
         school:
           name: "Universidad del Valle de Guatemala"
           # url: "https://example.org"
         date: "2021 - 2025"
         # GPA: "3.8 out of 5.0"
-        content: |-
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque de
    
   # Achievements
   # achievements:
@@ -329,31 +328,32 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+      - title: Estimates for pseudo-differential operators on the torus revisited. I
+        content: |-
+          Co-author: [Duván Cardona](https://sites.google.com/site/duvancardonas/home) <br> In this paper we prove \\(L^p\\)-estimates for Hörmander classes of pseudo-differential operators on the torus \\(\mathbb{T}^n\\). Our results are framed within the global symbolic calculus developed by Ruzhansky and Turunen on \\(\mathbb{T}^n \times \mathbb{Z}^n\\), by using the discrete Fourier analysis on the torus. This approach extends the classical \\((\rho, \delta)\\)-Hörmander classes to the toroidal setting. The main contributions of this work generalize the method of Álvarez and Hounie for \\(\mathbb{R}^n\\) to the torus, while also extending Fefferman's \\(L^p\\)-boundedness theorem to the toroidal context, even in cases where \\(\delta \geq \rho\\). When \\(\delta \leq \rho\\), our results align with and recover existing estimates found in the literature.
         # image: /images/sigma.svg
         featured:
-          name: Demo
-          link: /blog
+          name: arxiv.org
+          link: https://arxiv.org/abs/2502.20575
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Periodic pseudo-differential operators"
+          - "Discrete Fourier Analysis"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
+          - icon: "arxiv"
+            url: https://arxiv.org/abs/2502.20575
+      - title: Undergraduate thesis
+        content: |-
+          Advisor: [Duván Cardona](https://sites.google.com/site/duvancardonas/home) 
+        badges:
+          - "Periodic pseudo-differential operators"
+          - "Discrete Fourier Analysis"
 
   #Contact
   contact:
     enable: true
     title: "Contact"
     content: |-
-        My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you! <br> **My e-mail is:** manuelalejandromartinezf at gmail dot com.
+        My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you! <br> My e-mail is:  **manuelalejandromartinezf[at]gmail[dot]com**.
     # btnName: Mail me
     # btnLink: mailto:gurusabarisha@gmail.com
     # formspree:

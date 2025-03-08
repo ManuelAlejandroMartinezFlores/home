@@ -584,6 +584,7 @@ header .navbar.animate {
     /* transform: translate3d(0, 0, 0); */
     transition: box-shadow .2s linear,opacity .2s linear;
     border: 2px solid transparent;
+    max-width: 350px;
 }
 
 #achievements a.card {

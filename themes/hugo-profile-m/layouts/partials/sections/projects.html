@@ -17,7 +17,7 @@
                         </div>
                         <h5 class="card-title bg-transparent mt-1">{{ .title }}</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            {{ .content }}
+                            {{ .content | markdownify }}
                         </div>
                     </div>
                     {{ if or (.links) (.featured) }}
@@ -25,7 +25,11 @@
                         {{ range .links }}
                         <span class="m-1 mx-2">
                             <a href="{{ .url }}" target="_blank">
-                                <i class="{{ .icon }}"></i>
+                                {{ if eq .icon "arxiv" }} 
+                                <img src="/images/arxiv.svg" width="1" height="1" alt="Arxiv"></img>
+                                {{ else }}
+                                    <i class="{{ .icon }}"></i>
+                                {{ end }}
                             </a>
                         </span>
                         {{ end }}
@@ -63,7 +67,11 @@
                         {{ range .Params.links }}
                         <span class="m-1 mx-2">
                             <a href="{{ .url }}">
-                                <i class="{{ .icon }}"></i>
+                                {{ if eq .icon "arxiv" }} 
+                                <img src="/images/arxiv.svg" width="1" height="1" alt="Arxiv"></img>
+                                {{ else }}
+                                    <i class="{{ .icon }}"></i>
+                                {{ end }}
                             </a>
                         </span>
                         {{ end }}
