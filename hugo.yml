@@ -330,7 +330,7 @@ params:
     items:
       - title: Estimates for pseudo-differential operators on the torus revisited. I
         content: |-
-          Co-author: [Duván Cardona](https://sites.google.com/site/duvancardonas/home){target="_blank"} <br> In this paper we prove \\(L^p\\)-estimates for Hörmander classes of pseudo-differential operators on the torus \\(\mathbb{T}^n\\). Our results are framed within the global symbolic calculus developed by Ruzhansky and Turunen on \\(\mathbb{T}^n \times \mathbb{Z}^n\\), by using the discrete Fourier analysis on the torus. This approach extends the classical \\((\rho, \delta)\\)-Hörmander classes to the toroidal setting. The main contributions of this work generalize the method of Álvarez and Hounie for \\(\mathbb{R}^n\\) to the torus, while also extending Fefferman's \\(L^p\\)-boundedness theorem to the toroidal context, even in cases where \\(\delta \geq \rho\\). When \\(\delta \leq \rho\\), our results align with and recover existing estimates found in the literature.
+          Co-author: [Duván Cardona](https://sites.google.com/site/duvancardonas/home){:target="_blank"} <br> In this paper we prove \\(L^p\\)-estimates for Hörmander classes of pseudo-differential operators on the torus \\(\mathbb{T}^n\\). Our results are framed within the global symbolic calculus developed by Ruzhansky and Turunen on \\(\mathbb{T}^n \times \mathbb{Z}^n\\), by using the discrete Fourier analysis on the torus. This approach extends the classical \\((\rho, \delta)\\)-Hörmander classes to the toroidal setting. The main contributions of this work generalize the method of Álvarez and Hounie for \\(\mathbb{R}^n\\) to the torus, while also extending Fefferman's \\(L^p\\)-boundedness theorem to the toroidal context, even in cases where \\(\delta \geq \rho\\). When \\(\delta \leq \rho\\), our results align with and recover existing estimates found in the literature.
         # image: /images/sigma.svg
         featured:
           name: arxiv.org
@@ -343,7 +343,7 @@ params:
             url: https://arxiv.org/abs/2502.20575
       - title: Undergraduate thesis
         content: |-
-          Advisor: [Duván Cardona](https://sites.google.com/site/duvancardonas/home){target="_blank"}
+          Advisor: [Duván Cardona](https://sites.google.com/site/duvancardonas/home){:target="_blank"}
         badges:
           - "Periodic pseudo-differential operators"
           - "Discrete Fourier Analysis"
