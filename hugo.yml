@@ -294,11 +294,6 @@ params:
     title: "Awards, Honors and Scholarships"
     index: false
     items:
-      - title: "Beca de liderazgo en ciencias"
-        school:
-          name: "Universidad del Valle de Guatemala"
-          # url: "https://example.org"
-        date: "2021 - 2025"
         # GPA: "3.8 out of 5.0"
       - title: "10th Student Congress on Mathematics and Physics"
         school:
@@ -316,6 +311,11 @@ params:
           name: "Bronze Medal"
           # url: "https://example.org"
         date: "2023"
+      - title: "Beca de liderazgo en ciencias"
+        school:
+          name: "Universidad del Valle de Guatemala"
+          # url: "https://example.org"
+        date: "2021 - 2025"
    
   # Achievements
   # achievements:
@@ -346,10 +346,10 @@ params:
     items:
       - title: Estimates for pseudo-differential operators on the torus revisited. I
         content: |-
-          Preprint. Co-author: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a> <br> In this paper we prove \\(L^p\\)-estimates for Hörmander classes of pseudo-differential operators on the torus \\(\mathbb{T}^n\\). Our results are framed within the global symbolic calculus developed by Ruzhansky and Turunen on \\(\mathbb{T}^n \times \mathbb{Z}^n\\), by using the discrete Fourier analysis on the torus. This approach extends the classical \\((\rho, \delta)\\)-Hörmander classes to the toroidal setting. The main contributions of this work generalize the method of Álvarez and Hounie for \\(\mathbb{R}^n\\) to the torus, while also extending Fefferman's \\(L^p\\)-boundedness theorem to the toroidal context, even in cases where \\(\delta \geq \rho\\). When \\(\delta \leq \rho\\), our results align with and recover existing estimates found in the literature.
+          (2025) Preprint. Co-author: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a> <br> In this paper we prove \\(L^p\\)-estimates for Hörmander classes of pseudo-differential operators on the torus \\(\mathbb{T}^n\\). Our results are framed within the global symbolic calculus developed by Ruzhansky and Turunen on \\(\mathbb{T}^n \times \mathbb{Z}^n\\), by using the discrete Fourier analysis on the torus. This approach extends the classical \\((\rho, \delta)\\)-Hörmander classes to the toroidal setting. The main contributions of this work generalize the method of Álvarez and Hounie for \\(\mathbb{R}^n\\) to the torus, while also extending Fefferman's \\(L^p\\)-boundedness theorem to the toroidal context, even in cases where \\(\delta \geq \rho\\). When \\(\delta \leq \rho\\), our results align with and recover existing estimates found in the literature.
         # image: /images/sigma.svg
         featured:
-          name: See in arxiv.org
+          name: "See in arxiv.org"
           link: https://arxiv.org/abs/2502.20575
         badges:
           - "Periodic pseudo-differential operators"
@@ -363,7 +363,16 @@ params:
         badges:
           - "Periodic pseudo-differential operators"
           - "Discrete Fourier Analysis"
-
+      - title: "Linear Graphs to solve multi-physics problems"
+        content: |-
+          We use In this repository we implement the ideas discussed in <a href="https://web.mit.edu/2.151/www/Handouts/EqFormulation.pdf" target="_blank">this document from MIT</a> where they establish a correspondence between physical systems and graphs. Then we implement algorithms to generate the state equations.
+        featured:
+          name: "See more"
+          link: https://github.com/ManuelAlejandroMartinezFlores/LinearGraph-NormalTree
+        badges:
+          - "Linear graphs"
+          - "Multi-physics"
+        
   #Contact
   contact:
     enable: true
