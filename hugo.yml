@@ -90,7 +90,7 @@ Menus:
 params:
   title: "Manuel Martínez"
 
-  description: Text about my cool site
+  description: About me and my projects
   # staticPath: ""  # The path to serve the static files from
   favicon: images/torus-c.svg
 
