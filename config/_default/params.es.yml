@@ -1,0 +1,196 @@
+title: "Manuel Martínez"
+description: "Sobre mí y mis proyectos"
+favicon: "images/torus-c.svg"
+useBootstrapCDN: false
+mathjax: true
+animate: true
+
+theme:
+  defaultTheme: "light"
+
+font:
+  fontSize: 1rem
+  fontWeight: 400
+  lineHeight: 1.5
+  textAlign: left
+
+color:
+  textColor: "#343a40"
+  secondaryTextColor: "#6c757d"
+  textLinkColor: "#303090"
+  backgroundColor: "#eaedf0"
+  secondaryBackgroundColor: "#64ffda1a"
+  primaryColor: "#303090"
+  secondaryColor: "#f8f9fa"
+  
+  darkmode:
+    textColor: "#e4e6eb"
+    secondaryTextColor: "#b0b3b8"
+    textLinkColor: "#ccddff"
+    backgroundColor: "#101925"
+    secondaryBackgroundColor: "#212635"
+    primaryColor: "#eeeeff"
+    secondaryColor: "#212635"
+
+navbar:
+  align: "ms-auto"
+  brandLogo: "images/torus-c.svg"
+  showBrandLogo: true
+  brandName: "Manuel Martínez"
+  disableSearch: true
+  searchPlaceholder: "Buscar"
+  stickyNavBar:
+    enable: true
+    showOnScrollUp: true
+  enableSeparator: false
+  menus:
+    disableAbout: true
+    disableExperience: true
+    disableEducation: true
+    disableProjects: true
+    disableAchievements: true
+    disableContact: true
+
+hero:
+  enable: true
+  intro: "Hola, mi nombre es"
+  title: "Manuel Alejandro Martínez Flores."
+  subtitle: "Matemático"
+  content: "Soy un estudiante de Matemática Aplicada de Guatemala. Actualmente estoy interesado en trabajar en análisis armónico, específicamente en operadores pseudo-diferenciales."
+  image: "/images/Foto.jpg"
+  bottomImage:
+    enable: true
+  button:
+    enable: true
+    name: "Currículum"
+    url: "#"
+    download: true
+    newPage: false
+  socialLinks:
+    fontAwesomeIcons:
+      - icon: "fab fa-github"
+        url: "https://github.com/ManuelAlejandroMartinezFlores"
+      - icon: "fab fa-linkedin"
+        url: "https://www.linkedin.com/in/manuelamf"
+
+experience:
+  enable: true
+  title: "Educación"
+  index: false
+  items:
+    - title: "Licenciatura en Matemática Aplicada"
+      school:
+        name: "Universidad del Valle de Guatemala"
+      date: "2021 - 2025"
+      content: "- Contenido relevante: Teoría de la Medida, Análisis Funcional, Estadística Matemática, Análisis Complejo, Análisis Real, Álgebra Abstracta, Ecuaciones Diferenciales Parciales, Ecuaciones Diferenciales Ordinarias, Métodos Numéricos, Aprendizaje Estadístico, Álgebra Lineal, Geometría Euclidiana<br>- Promedio: 97/100"
+
+honors:
+  enable: true
+  title: "Premios, Honores y Becas"
+  index: false
+  items:
+    - title: "X Congreso Estudiantil de Matemática y Física"
+      school:
+        name: "Universidad del Valle de Guatemala"
+      date: "2024"
+    - title: "XXIII Escuela de Verano en Matemáticas"
+      school:
+        name: "Centro de ciencias matemáticas, UNAM Morelia"
+      date: "2024"
+    - title: "Olimpiada Iberoamericana de Matemática Universitaria (OIMU)"
+      school:
+        name: "Medalla de Bronce"
+      date: "2023"
+    - title: "Beca de liderazgo en ciencias"
+      school:
+        name: "Universidad del Valle de Guatemala"
+      date: "2021 - 2025"
+
+scientific:
+  enable: true
+  items:
+    - title: "Acotación de operadores pseudo-diferenciales en espacios de Hardy"
+      content: "(2025) Enviado. Con: <a href='https://sites.google.com/site/duvancardonas/home' target='_blank'>Duván Cardona</a> <br> En este artículo investigamos estimaciones H^p-L^p y H^p para operadores pseudo-diferenciales toroidales con símbolos en las clases de Hörmander (ρ,δ) definidas en el toro."
+      badges:
+        - "Operadores pseudo-diferenciales periódicos"
+        - "Análisis de Fourier discreto"
+    - title: "Acotación de operadores pseudo-diferenciales en el toro revisitada. II"
+      content: "(2025) Enviado. Con: <a href='https://sites.google.com/site/duvancardonas/home' target='_blank'>Duván Cardona</a> <br> En este artículo continuamos nuestro programa de revisitar los nuevos aspectos sobre las propiedades de acotación de operadores pseudo-diferenciales en el toro."
+      featured:
+        name: "Ver en arxiv.org"
+        link: "https://arxiv.org/abs/2505.01573"
+      badges:
+        - "Operadores pseudo-diferenciales periódicos"
+        - "Análisis de Fourier discreto"
+      links:
+        - icon: "arxiv"
+          url: "https://arxiv.org/abs/2505.01573"
+    - title: "Acotación de operadores pseudo-diferenciales en el toro mediante estimaciones del núcleo"
+      content: "(2025) Por aparecer en Trends in Mathematics. Con: <a href='https://sites.google.com/site/duvancardonas/home' target='_blank'>Duván Cardona</a> <br> En este artículo investigamos estimaciones L^p para clases de Hörmander de operadores pseudo-diferenciales en el toro T^n."
+      badges:
+        - "Operadores pseudo-diferenciales periódicos"
+        - "Análisis de Fourier discreto"
+    - title: "Estimaciones para operadores pseudo-diferenciales en el toro revisitadas. I"
+      content: "(2025) Enviado. Con: <a href='https://sites.google.com/site/duvancardonas/home' target='_blank'>Duván Cardona</a> <br> En este artículo demostramos estimaciones L^p para clases de Hörmander de operadores pseudo-diferenciales en el toro T^n."
+      featured:
+        name: "Ver en arxiv.org"
+        link: "https://arxiv.org/abs/2502.20575"
+      badges:
+        - "Operadores pseudo-diferenciales periódicos"
+        - "Análisis de Fourier discreto"
+      links:
+        - icon: "arxiv"
+          url: "https://arxiv.org/abs/2502.20575"
+    - title: "Tesis de pregrado"
+      content: "Asesor: <a href='https://sites.google.com/site/duvancardonas/home' target='_blank'>Duván Cardona</a>"
+      badges:
+        - "Operadores pseudo-diferenciales periódicos"
+        - "Análisis de Fourier discreto"
+    - title: "Grafos lineales para resolver problemas de multi-física"
+      content: "En este repositorio implementamos las ideas discutidas en <a href='https://web.mit.edu/2.151/www/Handouts/EqFormulation.pdf' target='_blank'>este documento del MIT</a> donde establecen una correspondencia entre sistemas físicos y grafos."
+      featured:
+        name: "Ver más"
+        link: "https://github.com/ManuelAlejandroMartinezFlores/LinearGraph-NormalTree"
+      badges:
+        - "Grafos lineales"
+        - "Multi-física"
+
+extension:
+  enable: true
+  title: "Extensión Científica"
+  items:
+    - title: "Congreso de la Sociedad Matemática Mexicana 2025"
+      content: "Ponente con la charla de investigación 'Operadores pseudo-diferenciales en el toro', donde se presenta mi trabajo con Duván Cardona"
+      date: "2025"
+    - title: "Seminario Latinoamericano de Matemáticas UMALCA-ICMAM"
+      content: "Miembro del comité organizador"
+      date: "2025"
+    - title: "Boletín UMALCA-ICMAM"
+      content: "Miembro del comité editorial"
+      date: "2025"
+    - title: "Conferencia Satélite ICMAM en Análisis y EDP"
+      content: "Miembro junior del comité organizador"
+      date: "2025"
+    - title: "Comunidad Internacional de Matemáticos (ICMAM) América Latina"
+      content: "Miembro del comité científico"
+      date: "2025"
+    - title: "X Congreso Estudiantil de Matemática y Física"
+      content: "Ponente con la charla informativa 'Límites', en la que se exploran definiciones fundamentales de la Teoría de Categorías"
+      date: "2024"
+
+contact:
+  enable: true
+  title: "Contacto"
+  content: "Mi bandeja de entrada siempre está abierta. ¡Ya sea que tengas una pregunta o solo quieras saludar, haré todo lo posible para responderte! <br> Mi correo electrónico es: <strong>manuelalejandromartinezf[at]gmail[dot]com</strong>."
+
+terms:
+  read: "Leer"
+  toc: "Tabla de Contenidos"
+  copyright: "Todos los derechos reservados"
+  pageNotFound: "Página no encontrada"
+  emailText: "Mira este sitio"
+
+datesFormat:
+  article: "2 Ene 2006"
+  articleList: "2 Ene 2006"
+  articleRecent: "2 Ene 2006"

@@ -1,0 +1,196 @@
+title: "Manuel Martínez"
+description: "About me and my projects"
+favicon: "images/torus-c.svg"
+useBootstrapCDN: false
+mathjax: true
+animate: true
+
+theme:
+  defaultTheme: "light"
+
+font:
+  fontSize: 1rem
+  fontWeight: 400
+  lineHeight: 1.5
+  textAlign: left
+
+color:
+  textColor: "#343a40"
+  secondaryTextColor: "#6c757d"
+  textLinkColor: "#303090"
+  backgroundColor: "#eaedf0"
+  secondaryBackgroundColor: "#64ffda1a"
+  primaryColor: "#303090"
+  secondaryColor: "#f8f9fa"
+  
+  darkmode:
+    textColor: "#e4e6eb"
+    secondaryTextColor: "#b0b3b8"
+    textLinkColor: "#ccddff"
+    backgroundColor: "#101925"
+    secondaryBackgroundColor: "#212635"
+    primaryColor: "#eeeeff"
+    secondaryColor: "#212635"
+
+navbar:
+  align: "ms-auto"
+  brandLogo: "images/torus-c.svg"
+  showBrandLogo: true
+  brandName: "Manuel Martínez"
+  disableSearch: true
+  searchPlaceholder: "Search"
+  stickyNavBar:
+    enable: true
+    showOnScrollUp: true
+  enableSeparator: false
+  menus:
+    disableAbout: true
+    disableExperience: true
+    disableEducation: true
+    disableProjects: true
+    disableAchievements: true
+    disableContact: true
+
+hero:
+  enable: true
+  intro: "Hi, my name is"
+  title: "Manuel Alejandro Martínez Flores."
+  subtitle: "Mathematician"
+  content: "I am an Applied Mathematics undergraduate student from Guatemala. Right now I am interested in working in harmonic analysis, specifically in pseudo-differential operators."
+  image: "/images/Foto.jpg"
+  bottomImage:
+    enable: true
+  button:
+    enable: true
+    name: "Resume"
+    url: "#"
+    download: true
+    newPage: false
+  socialLinks:
+    fontAwesomeIcons:
+      - icon: "fab fa-github"
+        url: "https://github.com/ManuelAlejandroMartinezFlores"
+      - icon: "fab fa-linkedin"
+        url: "https://www.linkedin.com/in/manuelamf"
+
+experience:
+  enable: true
+  title: "Education"
+  index: false
+  items:
+    - title: "B.Sc. in Applied Mathematics"
+      school:
+        name: "Universidad del Valle de Guatemala"
+      date: "2021 - 2025"
+      content: "- Relevant content: Measure Theory, Functional Analysis, Mathematical Statistics, Complex Analysis, Real Analysis, Abstract Algebra, Partial Differential Equations, Ordinary Differential Equations, Numerical Methods, Statistical Learning, Linear Algebra, Euclidean Geometry<br>- Average: 97/100"
+
+honors:
+  enable: true
+  title: "Awards, Honors and Scholarships"
+  index: false
+  items:
+    - title: "10th Student Congress on Mathematics and Physics"
+      school:
+        name: "Universidad del Valle de Guatemala"
+      date: "2024"
+    - title: "XXIII Summer School in Mathematics"
+      school:
+        name: "Centro de ciencias matemáticas, UNAM Morelia"
+      date: "2024"
+    - title: "Ibero-American Olympiad in University mathematics (OIMU)"
+      school:
+        name: "Bronze Medal"
+      date: "2023"
+    - title: "Beca de liderazgo en ciencias"
+      school:
+        name: "Universidad del Valle de Guatemala"
+      date: "2021 - 2025"
+
+scientific:
+  enable: true
+  items:
+    - title: "Boundedness of pseudo-differential operators on Hardy spaces"
+      content: "(2025) Submitted. With: <a href='https://sites.google.com/site/duvancardonas/home' target='_blank'>Duván Cardona</a> <br> In this paper we investigate H^p-L^p- and H^p-estimates for toroidal pseudo-differential operators with symbols in the (ρ,δ)-Hörmander classes defined on the torus. Our results are framed in the context of the toroidal symbolic calculus developed by Michael Ruzhansky and Ville Turunen."
+      badges:
+        - "Periodic pseudo-differential operators"
+        - "Discrete Fourier Analysis"
+    - title: "Boundedness of pseudo-differential operators on the torus revisited. II"
+      content: "(2025) Submitted. With: <a href='https://sites.google.com/site/duvancardonas/home' target='_blank'>Duván Cardona</a> <br> In this paper we continue our program of revisiting the new aspects about the boundedness properties of pseudo-differential operators on the torus."
+      featured:
+        name: "See in arxiv.org"
+        link: "https://arxiv.org/abs/2505.01573"
+      badges:
+        - "Periodic pseudo-differential operators"
+        - "Discrete Fourier Analysis"
+      links:
+        - icon: "arxiv"
+          url: "https://arxiv.org/abs/2505.01573"
+    - title: "Boundedness of pseudo-differential operators on the torus via kernel estimates"
+      content: "(2025) To appear in Trends in Mathematics. With: <a href='https://sites.google.com/site/duvancardonas/home' target='_blank'>Duván Cardona</a> <br> In this paper we investigate L^p-estimates for Hörmander classes of pseudo-differential operators on the torus T^n."
+      badges:
+        - "Periodic pseudo-differential operators"
+        - "Discrete Fourier Analysis"
+    - title: "Estimates for pseudo-differential operators on the torus revisited. I"
+      content: "(2025) Submitted. With: <a href='https://sites.google.com/site/duvancardonas/home' target='_blank'>Duván Cardona</a> <br> In this paper we prove L^p-estimates for Hörmander classes of pseudo-differential operators on the torus T^n."
+      featured:
+        name: "See in arxiv.org"
+        link: "https://arxiv.org/abs/2502.20575"
+      badges:
+        - "Periodic pseudo-differential operators"
+        - "Discrete Fourier Analysis"
+      links:
+        - icon: "arxiv"
+          url: "https://arxiv.org/abs/2502.20575"
+    - title: "Undergraduate thesis"
+      content: "Advisor: <a href='https://sites.google.com/site/duvancardonas/home' target='_blank'>Duván Cardona</a>"
+      badges:
+        - "Periodic pseudo-differential operators"
+        - "Discrete Fourier Analysis"
+    - title: "Linear Graphs to solve multi-physics problems"
+      content: "We use In this repository we implement the ideas discussed in <a href='https://web.mit.edu/2.151/www/Handouts/EqFormulation.pdf' target='_blank'>this document from MIT</a> where they establish a correspondence between physical systems and graphs."
+      featured:
+        name: "See more"
+        link: "https://github.com/ManuelAlejandroMartinezFlores/LinearGraph-NormalTree"
+      badges:
+        - "Linear graphs"
+        - "Multi-physics"
+
+extension:
+  enable: true
+  title: "Scientific Extension"
+  items:
+    - title: "Mexican Mathematical Society Congress 2025"
+      content: "Speaker with the research talk 'Pseudo-differential operators on the torus', where my work with Duván Cardona is presented"
+      date: "2025"
+    - title: "Latinamerican Seminar of Mathematics UMALCA-ICMAM"
+      content: "Organizing committee member"
+      date: "2025"
+    - title: "Newsletter UMALCA-ICMAM"
+      content: "Editorial board member"
+      date: "2025"
+    - title: "ICMAM Satellite Conference in Analysis and PDE"
+      content: "Junior organizing committee member"
+      date: "2025"
+    - title: "International Community of Mathematicians (ICMAM) Latin America"
+      content: "Scientific board member"
+      date: "2025"
+    - title: "10th Student Congress on Mathematics and Physics"
+      content: "Speaker with the informative talk 'Limits', in which fundamental definitions of Category Theory are explored"
+      date: "2024"
+
+contact:
+  enable: true
+  title: "Contact"
+  content: "My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you! <br> My e-mail is: <strong>manuelalejandromartinezf[at]gmail[dot]com</strong>."
+
+terms:
+  read: "Read"
+  toc: "Table Of Contents"
+  copyright: "All rights reserved"
+  pageNotFound: "Page not found"
+  emailText: "Check out this site"
+
+datesFormat:
+  article: "Jan 2, 2006"
+  articleList: "Jan 2, 2006"
+  articleRecent: "Jan 2, 2006"

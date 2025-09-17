@@ -1,0 +1,25 @@
+{{ define "main" }}
+  {{ if .Site.Params.hero.enable }}
+    {{ partial "hero.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.experience.enable }}
+    {{ partial "education.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.honors.enable }}
+    {{ partial "honors.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.scientific.enable }}
+    {{ partial "scientific.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.extension.enable }}
+    {{ partial "extension.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.contact.enable }}
+    {{ partial "contact.html" . }}
+  {{ end }}
+{{ end }}

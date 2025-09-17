@@ -1,0 +1,11 @@
+en:
+  languageName: "English"
+  title: "Manuel Martinez"
+  weight: 1
+  contentDir: content/en
+
+es:
+  languageName: "Español"
+  title: "Manuel Martínez"
+  weight: 2
+  contentDir: content/es

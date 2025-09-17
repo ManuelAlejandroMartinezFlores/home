@@ -1,0 +1,28 @@
+<header class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      {{ if and .Site.Params.navbar.showBrandLogo .Site.Params.navbar.brandLogo }}
+      <a class="navbar-item" href="{{ .Site.BaseURL }}">
+        <img src="{{ .Site.Params.navbar.brandLogo | relURL }}" alt="{{ .Site.Title }}">
+      </a>
+      {{ end }}
+      {{ if .Site.Params.navbar.brandName }}
+      <a class="navbar-item" href="{{ .Site.BaseURL }}">
+        {{ .Site.Params.navbar.brandName }}
+      </a>
+      {{ end }}
+    </div>
+    
+    <div class="navbar-menu">
+      {{ if .Site.Menus.main }}
+      <div class="navbar-end">
+        {{ range .Site.Menus.main }}
+        <a class="navbar-item" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+        
+        {{ partial "language-switcher.html" . }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</header>

@@ -1,0 +1,25 @@
+main:
+  - identifier: education
+    name: Educación
+    url: "#education"
+    weight: 1
+
+  - identifier: honors
+    name: Honores
+    url: "#honors"
+    weight: 2
+
+  - identifier: projects
+    name: Proyectos
+    url: "#projects"
+    weight: 3
+
+  - identifier: extension
+    name: Extensión Científica
+    url: "#extension"
+    weight: 4
+
+  - identifier: contact
+    name: Contacto
+    url: "#contact"
+    weight: 5
