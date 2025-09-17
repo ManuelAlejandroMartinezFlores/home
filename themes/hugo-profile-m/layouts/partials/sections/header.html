@@ -19,15 +19,22 @@
 </script>
 
 <!-- Show header on scroll up -->
-{{ if .Site.Params.navbar.stickyNavBar.enable | default false }}
-{{ $showNavBarOnScrollUp := .Site.Params.navbar.stickyNavBar.showOnScrollUp | default false }}
+{{ $navbar := .Site.Params.navbar }}
+{{ if .Site.Language.Params.navbar }}
+    {{ $navbar = .Site.Language.Params.navbar }}
+{{ end }}
+{{ if $navbar.stickyNavBar.enable | default false }}
+{{ $showNavBarOnScrollUp := $navbar.stickyNavBar.showOnScrollUp | default false }}
 <script>
     var prevScrollPos = window.pageYOffset;
     window.addEventListener("scroll", function showHeaderOnScroll() {
         let profileHeaderElem = document.getElementById("profileHeader");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
-        let showNavBarOnScrollUp = {{ $showNavBarOnScrollUp }};
+        let showNavBarOnScrollUp = false;
+        if (profileHeaderElem && profileHeaderElem.dataset) {
+            showNavBarOnScrollUp = profileHeaderElem.dataset.showNavOnScrollUp === 'true';
+        }
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -46,23 +53,25 @@
 {{ end }}
 
 <!-- Navbar -->
-<header id="profileHeader">
-    <nav class="pt-3 navbar navbar-expand-lg {{ if .Site.Params.animate }}animate{{ end }}">
+<header id="profileHeader" data-show-nav-on-scroll-up="{{ if $showNavBarOnScrollUp }}true{{ else }}false{{ end }}">
+    <nav class="pt-3 navbar navbar-expand-lg {{ if (or .Site.Language.Params.animate .Site.Params.animate) }}animate{{ end }}">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             <!-- navbar brand -->
             <a class="navbar-brand primary-font text-wrap" href="{{ .Site.BaseURL | relURL }}">
-                {{ if and (or (.Site.Params.favicon) (.Site.Params.navbar.brandLogo)) (.Site.Params.navbar.showBrandLogo | default true) }}
-                <img src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}" width="100" height="70"
-                    class="d-inline-block align-center">
-                {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
+                {{ $favicon := .Site.Params.favicon }}
+                {{ if .Site.Language.Params.favicon }}{{ $favicon = .Site.Language.Params.favicon }}{{ end }}
+                {{ $brandLogo := $navbar.brandLogo | default $favicon }}
+                {{ if and (or $favicon $brandLogo) ($navbar.showBrandLogo | default true) }}
+                <img src="{{ $brandLogo }}" width="100" height="70" class="d-inline-block align-center">
+                {{ $navbar.brandName | default .Site.Params.title }}
                 {{ else }}
-                {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
+                {{ $navbar.brandName | default .Site.Params.title }}
                 {{ end }}
             </a>
 
-            {{ if not (.Site.Params.navbar.disableSearch | default false) }}
+            {{ if not ($navbar.disableSearch | default false) }}
                 <div>
-                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='{{ .Site.Params.navbar.searchPlaceholder | default "Ctrl + k to Search..."}}'
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='{{ $navbar.searchPlaceholder | default "Ctrl + k to Search..."}}'
                         aria-label="Search" oninput="searchOnChange(event)">
                 </div>
             {{ end }}
@@ -77,8 +86,8 @@
 
             <!-- navbar content -->
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
-                <ul class="navbar-nav {{ .Site.Params.navbar.align | default "ms-auto"}} text-center">
-                    {{ if not (.Site.Params.navbar.disableSearch | default false) }}
+                <ul class="navbar-nav {{ $navbar.align | default "ms-auto"}} text-center">
+                    {{ if not ($navbar.disableSearch | default false) }}
                         <li class="nav-item navbar-text d-block d-md-none">
                             <div class="nav-link">
                                 <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='{{ .Site.Params.navbar.searchPlaceholder | default "Ctrl + k to Search..."}}' aria-label="Search" oninput="searchOnChange(event)">
@@ -86,55 +95,67 @@
                         </li>
                     {{ end }}
 
-                    {{ if and (.Site.Params.about.enable | default false) (not (.Site.Params.navbar.menus.disableAbout | default false)) }}
+                    {{ $about := .Site.Params.about }}
+                    {{ if .Site.Language.Params.about }}{{ $about = .Site.Language.Params.about }}{{ end }}
+                    {{ if and ($about.enable | default false) (not ($navbar.menus.disableAbout | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#about" aria-label="about">
-                            {{ .Site.Params.about.title | default "About" }}
+                            {{ $about.title | default "About" }}
                         </a>
                     </li>
                     {{ end }}
 
-                    {{ if and (.Site.Params.experience.enable | default false) (not (.Site.Params.navbar.menus.disableExperience | default false)) }}
+                    {{ $experience := .Site.Params.experience }}
+                    {{ if .Site.Language.Params.experience }}{{ $experience = .Site.Language.Params.experience }}{{ end }}
+                    {{ if and ($experience.enable | default false) (not ($navbar.menus.disableExperience | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#experience"
                             aria-label="experience">
-                            {{ .Site.Params.experience.title | default "Experience" }}
+                            {{ $experience.title | default "Experience" }}
                         </a>
                     </li>
                     {{ end }}
 
-                    {{ if and (.Site.Params.education.enable | default false) (not (.Site.Params.navbar.menus.disableEducation | default false)) }}
+                    {{ $education := .Site.Params.education }}
+                    {{ if .Site.Language.Params.education }}{{ $education = .Site.Language.Params.education }}{{ end }}
+                    {{ if and ($education.enable | default false) (not ($navbar.menus.disableEducation | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#education"
                             aria-label="education">
-                            {{ .Site.Params.education.title | default "Education" }}
+                            {{ $education.title | default "Education" }}
                         </a>
                     </li>
                     {{ end }}
 
-                    {{ if and (.Site.Params.projects.enable | default false) (not (.Site.Params.navbar.menus.disableProjects | default false)) }}
+                    {{ $projects := .Site.Params.projects }}
+                    {{ if .Site.Language.Params.projects }}{{ $projects = .Site.Language.Params.projects }}{{ end }}
+                    {{ if and ($projects.enable | default false) (not ($navbar.menus.disableProjects | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#projects"
                             aria-label="projects">
-                            {{ .Site.Params.projects.title | default "Projects" }}
+                            {{ $projects.title | default "Projects" }}
                         </a>
                     </li>
                     {{ end }}
 
-                    {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
+                    {{ $achievements := .Site.Params.achievements }}
+                    {{ if .Site.Language.Params.achievements }}{{ $achievements = .Site.Language.Params.achievements }}{{ end }}
+                    {{ if and ($achievements.enable | default false) (not ($navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#achievements"
                             aria-label="achievements">
-                            {{ .Site.Params.achievements.title | default "Achievements" }}
+                            {{ $achievements.title | default "Achievements" }}
                         </a>
                     </li>
                     {{ end }}
 
-                    {{ if and (.Site.Params.contact.enable | default false) (not (.Site.Params.navbar.menus.disableContact | default false)) }}
+                    {{ $contact := .Site.Params.contact }}
+                    {{ if .Site.Language.Params.contact }}{{ $contact = .Site.Language.Params.contact }}{{ end }}
+                    {{ if and ($contact.enable | default false) (not ($navbar.menus.disableContact | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#contact"
                             aria-label="contact">
-                            {{ .Site.Params.contact.title | default "Contact" }}
+                            {{ $contact.title | default "Contact" }}
                         </a>
                     </li>
                     {{ end }}
@@ -173,7 +194,9 @@
                     {{end}}
                     {{end}}
 
-                    {{ if (not .Site.Params.theme.disableThemeToggle | default false) }}
+                    {{ $themeParams := .Site.Params.theme }}
+                    {{ if .Site.Language.Params.theme }}{{ $themeParams = .Site.Language.Params.theme }}{{ end }}
+                    {{ if (not $themeParams.disableThemeToggle | default false) }}
                     <li class="nav-item navbar-text">
                         <!-- darkmode mode toggle -->
                         <div class="text-center">

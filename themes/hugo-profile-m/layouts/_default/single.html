@@ -137,7 +137,13 @@
 
   // To set height of sticky sidebar dynamically
   let stickySideBarElem = document.getElementById("stickySideBar");
-  let stickyNavBar = {{ .Site.Params.navbar.stickyNavBar.enable | default false }};
+  let stickyNavBar = false;
+  try {
+    var themeMeta = document.getElementById('site-theme-data');
+    if (themeMeta && themeMeta.dataset) {
+      stickyNavBar = themeMeta.dataset.stickyNav === 'true';
+    }
+  } catch (e) { stickyNavBar = false; }
   if(stickyNavBar) {
     let headerElem = document.getElementById("profileHeader");
     let headerHeight = headerElem.offsetHeight + 15;

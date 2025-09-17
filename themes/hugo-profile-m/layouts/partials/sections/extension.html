@@ -1,15 +1,13 @@
-{{ if or (.Site.Params.extension.enable | default false) (.Site.Language.Params.extension.enable) }}
+{{ $ext := .Site.Params.extension }}
+{{ if .Site.Language.Params.extension }}{{ $ext = .Site.Language.Params.extension }}{{ end }}
+{{ if $ext.enable | default false }}
 <section id="extension" class="py-5">
     <div class="container">
-        <h3 class="text-center">{{ with .Site.Params.extension.title }}{{ . }}{{ else if .Site.Language.Params.extension.title }}{{ .Site.Language.Params.extension.title }}{{ else }}Extension{{ end }}</h3>
+        <h3 class="text-center">{{ $ext.title | default "Extension" }}</h3>
         <div class="row justify-content-center py-5">
             <div class="col-12 col-md-10">
                 <div class="row">
-                    {{ $items := .Site.Params.extension.items }}
-                    {{ if .Site.Language.Params.extension.items }}
-                        {{ $items = .Site.Language.Params.extension.items }}
-                    {{ end }}
-                    {{ range $items }}
+                    {{ range $ext.items }}
                     <div class="col-12 mb-3">
                         <div class="card bg-transparent">
                             <div class="card-body">

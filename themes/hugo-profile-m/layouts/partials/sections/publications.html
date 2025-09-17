@@ -1,15 +1,13 @@
-{{ if or (.Site.Params.publications.enable | default false) (.Site.Language.Params.publications.enable) }}
+{{ $pub := .Site.Params.publications }}
+{{ if .Site.Language.Params.publications }}{{ $pub = .Site.Language.Params.publications }}{{ end }}
+{{ if $pub.enable | default false }}
 <section id="publications" class="py-5">
     <div class="container">
-        <h3 class="text-center">{{ with .Site.Params.publications.title }}{{ . }}{{ else if .Site.Language.Params.publications.title }}{{ .Site.Language.Params.publications.title }}{{ else }}Publications{{ end }}</h3>
+        <h3 class="text-center">{{ $pub.title | default "Publications" }}</h3>
         <div class="row justify-content-center py-5">
             <div class="col-12 col-md-10">
                 <ul class="list-unstyled">
-                    {{ $items := .Site.Params.publications.items }}
-                    {{ if .Site.Language.Params.publications.items }}
-                        {{ $items = .Site.Language.Params.publications.items }}
-                    {{ end }}
-                    {{ range $items }}
+                    {{ range $pub.items }}
                     <li class="mb-3">
                         <div class="card bg-transparent">
                             <div class="card-body">
