@@ -1,29 +1,54 @@
-{{ $contact := .Site.Language.Params.contact }}
+{{ $contact := .Site.Language.Params.contact }}{{ $contact := .Site.Language.Params.contact }}
 
-<section id="contact">{{ if $contact.enable | default false }}
+{{ if $contact.enable | default false }}
 
-    <div class="container-fluid section-holder d-flex"><section id="contact" class="py-5">
+<section id="contact" class="py-5"><section id="contact">{{ if $contact.enable | default false }}
 
-        <div class="container">    <div class="container">
+    <div class="container">
 
-            <div class="row justify-content-center">        <h3 class="text-center">{{ $contact.title | default "Get in Touch" }}</h3>
+        <div class="row justify-content-center">    <div class="container-fluid section-holder d-flex"><section id="contact" class="py-5">
 
-                <div class="col-md-8 text-center">        <div class="px-0 px-md-5 px-lg-5">
+            <div class="col-md-8 text-center">
 
-                    <h2 class="title">{{ $contact.title }}</h2>            <div class="row justify-content-center px-md-5">
+                <h3 class="text-center">{{ $contact.title }}</h3>        <div class="container">    <div class="container">
 
-                    {{ if $contact.subtitle }}                <div class="col-md-8 py-3">
+                {{ if $contact.subtitle }}
 
-                    <div class="subtitle">{{ $contact.subtitle }}</div>                    <div class="text-center">
+                <div class="subtitle">{{ $contact.subtitle }}</div>            <div class="row justify-content-center">        <h3 class="text-center">{{ $contact.title | default "Get in Touch" }}</h3>
 
-                    {{ end }}                        {{ $contact.content | emojify | markdownify }}
+                {{ end }}
 
-                </div>                    </div>
+            </div>                <div class="col-md-8 text-center">        <div class="px-0 px-md-5 px-lg-5">
 
-            </div>                    {{ if $contact.formspree.enable | default false }}
+        </div>
 
-            <div class="row justify-content-center mt-3">                    <div class="row justify-content-center">
+        <div class="row justify-content-center mt-3">                    <h2 class="title">{{ $contact.title }}</h2>            <div class="row justify-content-center px-md-5">
 
+            <div class="col-lg-8">
+
+                <div class="contact-links d-flex flex-wrap justify-content-center">                    {{ if $contact.subtitle }}                <div class="col-md-8 py-3">
+
+                    {{ range $contact.links }}
+
+                    <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .title }}" class="p-3">                    <div class="subtitle">{{ $contact.subtitle }}</div>                    <div class="text-center">
+
+                        <i class="{{ .icon }} fa-2x"></i>
+
+                    </a>                    {{ end }}                        {{ $contact.content | emojify | markdownify }}
+
+                    {{ end }}
+
+                </div>                </div>                    </div>
+
+            </div>
+
+        </div>            </div>                    {{ if $contact.formspree.enable | default false }}
+
+    </div>
+
+</section>            <div class="row justify-content-center mt-3">                    <div class="row justify-content-center">
+
+{{ end }}
                 <div class="col-lg-8">                        <form id="contact-form" action="https://formspree.io/f/{{ $contact.formspree.formId }}" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
 
                     <div class="contact-links d-flex flex-wrap justify-content-center">                            <div class="form-group pt-3">
