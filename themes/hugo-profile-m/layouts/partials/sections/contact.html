@@ -1,6 +1,4 @@
-{{ $contact := .Site.Params.contact }}{{ $contact := .Site.Params.contact }}
-
-{{ if $contact.enable }}{{ if .Site.Language.Params.contact }}{{ $contact = .Site.Language.Params.contact }}{{ end }}
+{{ $contact := .Site.Language.Params.contact }}
 
 <section id="contact">{{ if $contact.enable | default false }}
 

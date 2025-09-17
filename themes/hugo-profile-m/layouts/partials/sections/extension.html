@@ -1,5 +1,4 @@
-{{ $ext := .Site.Params.extension }}
-{{ if .Site.Language.Params.extension }}{{ $ext = .Site.Language.Params.extension }}{{ end }}
+{{ $ext := .Site.Language.Params.extension }}
 {{ if $ext.enable | default false }}
 <section id="extension" class="py-5">
     <div class="container">

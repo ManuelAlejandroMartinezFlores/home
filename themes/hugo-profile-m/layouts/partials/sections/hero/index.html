@@ -1,11 +1,5 @@
-{{ $hero := .Site.Params.hero }}
-{{ if .Site.Language.Params.hero }}
-    {{ $hero = .Site.Language.Params.hero }}
-{{ end }}
-{{ $animate := .Site.Params.animate }}
-{{ if .Site.Language.Params.animate }}
-    {{ $animate = .Site.Language.Params.animate }}
-{{ end }}
+{{ $hero := .Site.Language.Params.hero }}
+{{ $animate := .Site.Language.Params.animate }}
 {{ if $hero.enable | default false }}
 <section id="hero" class="py-5 align-middle">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">

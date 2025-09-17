@@ -1,7 +1,4 @@
-{{ $honors := .Site.Params.honors }}
-{{ if .Site.Language.Params.honors }}
-    {{ $honors = .Site.Language.Params.honors }}
-{{ end }}
+{{ $honors := .Site.Language.Params.honors }}
 {{ if $honors.enable | default false }}
 <section id="honors" class="py-5">
     <div class="container">

@@ -1,5 +1,4 @@
-{{ $pub := .Site.Params.publications }}
-{{ if .Site.Language.Params.publications }}{{ $pub = .Site.Language.Params.publications }}{{ end }}
+{{ $pub := .Site.Language.Params.publications }}
 {{ if $pub.enable | default false }}
 <section id="publications" class="py-5">
     <div class="container">

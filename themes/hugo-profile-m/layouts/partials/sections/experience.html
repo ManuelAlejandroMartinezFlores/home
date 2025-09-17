@@ -1,7 +1,4 @@
-{{ $experience := .Site.Params.experience }}
-{{ if .Site.Language.Params.experience }}
-    {{ $experience = .Site.Language.Params.experience }}
-{{ end }}
+{{ $experience := .Site.Language.Params.experience }}
 {{ if $experience.enable | default false }}
 <section id="experience" class="py-5">
     <div class="container">
@@ -43,7 +40,7 @@
                         {{ end }}
                     </ul>
                     <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
-                        {{ range $index, $element := .Site.Params.experience.items }}
+                        {{ range $index, $element := $experience.items }}
                         {{ if (eq $index 0) }}
                         <div 
                             class="tab-pane fade show active bg-transparent" 
