@@ -90,42 +90,33 @@ languages:
               url: https://github.com/ManuelAlejandroMartinezFlores
             - icon: fab fa-linkedin
               url: https://www.linkedin.com/in/manuelamf
-        experience:
-          enable: true
-          title: "Academic Positions and Professional Experience"
-          items:
-            - job: "B.Sc. in Applied Mathematics"
-              company: "Universidad del Valle de Guatemala"
-              companyUrl: ""
-              date: "2021 - 2025"
-              content: "Applied Mathematics undergraduate student."
-        publications:
-          enable: true
-          title: "Scientific Publications"
-          items:
-            - title: "Boundedness of pseudo-differential operators on Hardy spaces"
-              content: |-
-                (2025) Submitted. With: Duván Cardona. Study on H^p and L^p estimates for pseudo-differential operators on the torus.
-              links:
-                - name: arXiv
-                  url: https://arxiv.org/abs/2505.01573
-        extension:
-          enable: true
-          title: "Scientific Extension"
-          items:
-            - title: "Seminar: Discrete Fourier Analysis and Applications"
-              content: |-
-                Invited seminar at Universidad del Valle de Guatemala on applications of discrete Fourier analysis.
-              url: "#"
-        education:
+      experience:
         enable: true
-        title: "Education"
-        index: false
+        title: "Academic Positions and Professional Experience"
         items:
-          - title: "B.Sc. in Applied Mathematics"
-            school:
-              name: "Universidad del Valle de Guatemala"
+          - job: "B.Sc. in Applied Mathematics"
+            company: "Universidad del Valle de Guatemala"
+            companyUrl: ""
             date: "2021 - 2025"
+            content: "Applied Mathematics undergraduate student."
+      publications:
+        enable: true
+        title: "Scientific Publications"
+        items:
+          - title: "Boundedness of pseudo-differential operators on Hardy spaces"
+            content: |-
+              (2025) Submitted. With: Duván Cardona. Study on H^p and L^p estimates for pseudo-differential operators on the torus.
+            links:
+              - name: arXiv
+                url: https://arxiv.org/abs/2505.01573
+      extension:
+        enable: true
+        title: "Scientific Extension"
+        items:
+          - title: "Seminar: Discrete Fourier Analysis and Applications"
+            content: |-
+              Invited seminar at Universidad del Valle de Guatemala on applications of discrete Fourier analysis.
+            url: "#"
       honors:
         enable: true
         title: "Awards, Honors and Scholarships"
@@ -337,17 +328,17 @@ markup:
 
 Menus:
   main:
-    - identifier: education
-      name: Education
-      url: "#education"
+    - identifier: Experience
+      name: Experience
+      url: "#experience"
       weight: 1
     - identifier: honors
       name: Honors
       url: "#honors"
       weight: 1
-    - identifier: projects
-      name: Projects
-      url: "#projects"
+    - identifier: extension
+      name: Extension
+      url: "#extension"
       weight: 1
     - identifier: contact
       name: Contact

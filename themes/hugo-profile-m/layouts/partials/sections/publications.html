@@ -2,20 +2,24 @@
 {{ if $pub.enable | default false }}
 <section id="publications" class="py-5">
     <div class="container">
-        <h3 class="text-center">{{ $pub.title | default "Publications" }}</h3>
-        <div class="row justify-content-center py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>{{ $pub.title | default "Publications" }}</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-10">
                 <ul class="list-unstyled">
                     {{ range $pub.items }}
-                    <li class="mb-3">
+                    <li class="mb-4">
                         <div class="card bg-transparent">
                             <div class="card-body">
                                 <h5 class="card-title">{{ .title }}</h5>
-                                <div class="card-text">{{ .content | markdownify }}</div>
+                                <p class="card-text">{{ .content | markdownify }}</p>
                                 {{ if .links }}
-                                <div class="mt-2">
+                                <div class="mt-3">
                                     {{ range .links }}
-                                        <a class="me-2" href="{{ .url }}" target="_blank">{{ .name | default .url }}</a>
+                                    <a href="{{ .url }}" target="_blank" class="me-3">{{ .name | default .url }}</a>
                                     {{ end }}
                                 </div>
                                 {{ end }}
