@@ -1,0 +1,44 @@
+<section id="projects" class="section scientific">
+  <div class="container">
+    <h2 class="section-title">Scientific Publications & Projects</h2>
+    
+    <div class="scientific-grid">
+      {{ range .Site.Params.scientific.items }}
+      <div class="scientific-item">
+        <h3 class="scientific-title">{{ .title }}</h3>
+        
+        <div class="scientific-content">
+          {{ .content | markdownify }}
+        </div>
+        
+        {{ if .badges }}
+        <div class="scientific-badges">
+          {{ range .badges }}
+          <span class="badge">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        {{ if .featured }}
+        <div class="scientific-featured">
+          <a href="{{ .featured.link }}" target="_blank" class="featured-link">
+            {{ .featured.name }}
+          </a>
+        </div>
+        {{ end }}
+        
+        {{ if .links }}
+        <div class="scientific-links">
+          {{ range .links }}
+          <a href="{{ .url }}" target="_blank" class="scientific-link">
+            <i class="fas fa-external-link-alt"></i>
+            {{ if eq .icon "arxiv" }}arXiv{{ else }}View{{ end }}
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

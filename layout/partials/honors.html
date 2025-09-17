@@ -1,0 +1,15 @@
+<section id="honors" class="section honors">
+  <div class="container">
+    <h2 class="section-title">{{ .Site.Params.honors.title }}</h2>
+    
+    <div class="honors-grid">
+      {{ range .Site.Params.honors.items }}
+      <div class="honor-item">
+        <h3 class="honor-title">{{ .title }}</h3>
+        <div class="honor-school">{{ .school.name }}</div>
+        <div class="honor-date">{{ .date }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

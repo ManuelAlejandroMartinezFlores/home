@@ -1,0 +1,36 @@
+baseURL: "https://manuelalejandro-martinezflores.com"
+languageCode: "en-us"
+title: "Manuel Martinez"
+relativeURLs: true
+canonifyURLs: true
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  math:
+    enable: true
+
+taxonomies:
+  category: categories
+  tag: tags
+  publication_type: publication_types
+
+imaging:
+  resampleFilter: "CatmullRom"
+  quality: 75
+  anchor: "smart"

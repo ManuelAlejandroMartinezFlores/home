@@ -1,0 +1,11 @@
+<script src="{{ "js/theme.js" | relURL }}"></script>
+
+{{ if .Site.Params.mathjax }}
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+{{ end }}

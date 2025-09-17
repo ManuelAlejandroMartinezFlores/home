@@ -1,0 +1,41 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-intro">{{ .Site.Params.hero.intro }}</p>
+        <h1 class="hero-title">{{ .Site.Params.hero.title }}</h1>
+        <h2 class="hero-subtitle">{{ .Site.Params.hero.subtitle }}</h2>
+        <div class="hero-description">
+          {{ .Site.Params.hero.content | markdownify }}
+        </div>
+        
+        {{ if .Site.Params.hero.button.enable }}
+        <div class="hero-buttons">
+          <a href="{{ .Site.Params.hero.button.url }}" 
+             class="button primary" 
+             {{ if .Site.Params.hero.button.download }}download{{ end }}
+             {{ if .Site.Params.hero.button.newPage }}target="_blank"{{ end }}>
+            {{ .Site.Params.hero.button.name }}
+          </a>
+        </div>
+        {{ end }}
+        
+        {{ if .Site.Params.hero.socialLinks }}
+        <div class="hero-social">
+          {{ range .Site.Params.hero.socialLinks.fontAwesomeIcons }}
+          <a href="{{ .url }}" target="_blank" class="social-icon">
+            <i class="{{ .icon }}"></i>
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      
+      {{ if .Site.Params.hero.image }}
+      <div class="hero-image">
+        <img src="{{ .Site.Params.hero.image | relURL }}" alt="{{ .Site.Params.hero.title }}">
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

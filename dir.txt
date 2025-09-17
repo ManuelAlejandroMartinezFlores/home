@@ -1,0 +1,43 @@
+hugo-profile/
+├── config/
+│   └── _default/
+│       ├── config.yml
+│       ├── languages.yml
+│       ├── menus.en.yml
+│       ├── menus.es.yml
+│       ├── params.en.yml
+│       └── params.es.yml
+├── content/
+│   ├── en/
+│   │   └── _index.md
+│   └── es/
+│       └── _index.md
+├── layouts/
+│   ├── _default/
+│   │   ├── baseof.html
+│   │   ├── home.html
+│   │   └── single.html
+│   ├── partials/
+│   │   ├── head.html
+│   │   ├── header.html
+│   │   ├── footer.html
+│   │   ├── hero.html
+│   │   ├── education.html
+│   │   ├── honors.html
+│   │   ├── scientific.html
+│   │   ├── contact.html
+│   │   ├── language-switcher.html
+│   │   └── scripts.html
+│   └── shortcodes/
+├── static/
+│   ├── images/
+│   │   ├── Foto.jpg
+│   │   └── torus-c.svg
+│   └── js/
+│       └── theme.js
+├── assets/
+│   └── scss/
+│       └── custom.scss
+└── .github/
+    └── workflows/
+        └── gh-pages.yml

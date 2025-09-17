@@ -1,0 +1,17 @@
+<div class="language-switcher">
+  {{ if .IsTranslated }}
+    {{ range .AllTranslations }}
+      <a href="{{ .Permalink }}" class="navbar-item {{ if eq .Lang $.Lang }}active{{ end }}">
+        {{ .Language.LanguageName }}
+      </a>
+    {{ end }}
+  {{ else }}
+    {{ range .Site.Languages }}
+      {{ if ne .Lang $.Lang }}
+        <a href="/{{ .Lang }}" class="navbar-item">{{ .LanguageName }}</a>
+      {{ else }}
+        <span class="navbar-item active">{{ .LanguageName }}</span>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</div>

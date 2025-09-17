@@ -1,0 +1,25 @@
+main:
+  - identifier: education
+    name: Education
+    url: "#education"
+    weight: 1
+
+  - identifier: honors
+    name: Honors
+    url: "#honors"
+    weight: 2
+
+  - identifier: projects
+    name: Projects
+    url: "#projects"
+    weight: 3
+
+  - identifier: extension
+    name: Scientific Extension
+    url: "#extension"
+    weight: 4
+
+  - identifier: contact
+    name: Contact
+    url: "#contact"
+    weight: 5
