@@ -23,8 +23,9 @@
 {{ if .Site.Language.Params.navbar }}
     {{ $navbar = .Site.Language.Params.navbar }}
 {{ end }}
+{{ $showNavBarOnScrollUp := false }}
 {{ if $navbar.stickyNavBar.enable | default false }}
-{{ $showNavBarOnScrollUp := $navbar.stickyNavBar.showOnScrollUp | default false }}
+{{ $showNavBarOnScrollUp = $navbar.stickyNavBar.showOnScrollUp | default false }}
 <script>
     var prevScrollPos = window.pageYOffset;
     window.addEventListener("scroll", function showHeaderOnScroll() {
