@@ -40,15 +40,24 @@
 <!-- theme -->
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/theme.css" media="all">
 
-{{ $color := .Site.Params.color }}
-{{ if .Site.Language.Params.color }}{{ $color = .Site.Language.Params.color }}{{ end }}
-{{ $font := .Site.Params.font }}
-{{ if .Site.Language.Params.font }}{{ $font = .Site.Language.Params.font }}{{ end }}
-{{ $navbar := .Site.Params.navbar }}
-{{ if .Site.Language.Params.navbar }}{{ $navbar = .Site.Language.Params.navbar }}{{ end }}
+{{ $color := .Site.Language.Params.color }}
+
+{{ $font := .Site.Language.Params.font }}
+{{ $navbar := .Site.Language.Params.navbar }}
+
+{{- /* compute safe fallbacks for link colors */ -}}
+{{ $primaryFallback := "#007bff" }}
+{{ with $color.primaryColor }}{{ $primaryFallback = . }}{{ end }}
+{{ $textLink := $primaryFallback }}
+{{ with $color.textLinkColor }}{{ $textLink = . }}{{ end }}
+
+{{ $primaryFallbackDark := "#ffffff" }}
+{{ with (and $color.darkmode $color.darkmode.primaryColor) }}{{ $primaryFallbackDark = . }}{{ end }}
+{{ $textLinkDark := $primaryFallbackDark }}
+{{ with (and $color.darkmode $color.darkmode.textLinkColor) }}{{ $textLinkDark = . }}{{ end }}
 
 <!-- Theme data for runtime CSS variables (JSON encoded to avoid template tokens inside CSS/JS) -->
-<meta id="site-theme-data" data-color='{{ $color | jsonify }}' data-font='{{ $font | jsonify }}' data-sticky-nav='{{ ($navbar.stickyNavBar.enable | default false) | jsonify }}'>
+<!-- <meta id="site-theme-data" data-color='{{ $color | jsonify }}' data-font='{{ $font | jsonify }}' data-sticky-nav='{{ ($navbar.stickyNavBar.enable | default false) | jsonify }}'>
 
 <script>
     // Read theme data and set CSS variables and body font styles at runtime.
@@ -64,7 +73,7 @@
             root.style.setProperty('--text-color', color.textColor || '#343a40');
             root.style.setProperty('--text-secondary-color', color.secondaryTextColor || '#6c757d');
             root.style.setProperty('--text-link-color', color.textLinkColor || (color.primaryColor || '#007bff'));
-            root.style.setProperty('--background-color', color.backgroundColor || '#eaedf0');
+            root.style.setProperty('--background-color', color.backgroundColor || '#eeefef');
             root.style.setProperty('--secondary-background-color', color.secondaryBackgroundColor || '#64ffda1a');
             root.style.setProperty('--primary-color', color.primaryColor || '#007bff');
             root.style.setProperty('--secondary-color', color.secondaryColor || '#f8f9fa');
@@ -88,6 +97,26 @@
             }
         } catch (e) { /* ignore */ }
     })();
-</script>
+</script> -->
+
+<style>
+:root {
+  --text-color: {{ $color.textColor | default "#343a40" }};
+  --text-secondary-color: {{ $color.secondaryTextColor | default "#6c757d" }};
+    --text-link-color: {{ $textLink }};
+  --background-color: {{ $color.backgroundColor | default "#eaedf0" }};
+  --secondary-background-color: {{ $color.secondaryBackgroundColor | default "#64ffda1a" }};
+  --primary-color: {{ $color.primaryColor | default "#007bff" }};
+  --secondary-color: {{ $color.secondaryColor | default "#f8f9fa" }};
+
+  --text-color-dark: {{ with $color.darkmode }}{{ .textColor | default "#e4e6eb" }}{{ else }}#e4e6eb{{ end }};
+  --text-secondary-color-dark: {{ with $color.darkmode }}{{ .secondaryTextColor | default "#b0b3b8" }}{{ else }}#b0b3b8{{ end }};
+    --text-link-color-dark: {{ $textLinkDark }};
+  --background-color-dark: {{ with $color.darkmode }}{{ .backgroundColor | default "#18191a" }}{{ else }}#18191a{{ end }};
+  --secondary-background-color-dark: {{ with $color.darkmode }}{{ .secondaryBackgroundColor | default "#212529" }}{{ else }}#212529{{ end }};
+  --primary-color-dark: {{ with $color.darkmode }}{{ .primaryColor | default "#ffffff" }}{{ else }}#ffffff{{ end }};
+  --secondary-color-dark: {{ with $color.darkmode }}{{ .secondaryColor | default "#212529" }}{{ else }}#212529{{ end }};
+}
+</style>
 
 {{ partial "head/extensions.html" . }}

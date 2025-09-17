@@ -23,7 +23,7 @@ languages:
         enable: false
       title: "Manuel Martínez"
       description: "About me and my projects"
-      favicon: images/torus-c.svg
+      favicon: /images/torus-c.svg
       useBootstrapCDN: false
       mathjax: true
       animate: true
@@ -37,7 +37,7 @@ languages:
         textColor: "#343a40"
         secondaryTextColor: "#6c757d"
         textLinkColor: "#303090"
-        backgroundColor: "#eaedf0"
+        backgroundColor: "#eeefef"
         secondaryBackgroundColor: "#64ffda1a"
         primaryColor: "#303090"
         secondaryColor: "#f8f9fa"
@@ -45,13 +45,13 @@ languages:
           textColor: "#e4e6eb"
           secondaryTextColor: "#b0b3b8"
           textLinkColor: "#ccddff"
-          backgroundColor: "#101925"
+          backgroundColor: "#001020"
           secondaryBackgroundColor: "#212635"
           primaryColor: "#eeeeff"
           secondaryColor: "#212635"
       navbar:
         align: ms-auto
-        brandLogo: images/torus-c.svg
+        # brandLogo: images/torus-c.svg
         showBrandLogo: true
         brandName: "Manuel Martínez"
         disableSearch: true
@@ -60,13 +60,24 @@ languages:
           enable: true
           showOnScrollUp: true
         enableSeparator: false
-        menus:
-          disableAbout: true
-          disableExperience: false
-          disableEducation: true
-          disableProjects: true
-          disableAchievements: true
-          disableContact: true
+      menus:
+        main:
+          - identifier: experience
+            name: Experience
+            url: "#experience"
+            weight: 1
+          - identifier: honors
+            name: Honors
+            url: "#honors"
+            weight: 1
+          - identifier: extension
+            name: Extension
+            url: "#extension"
+            weight: 1
+          - identifier: contact
+            name: Contact
+            url: "#contact"
+            weight: 0
       hero:
         enable: true
         intro: "Hi, my name is"
@@ -81,9 +92,8 @@ languages:
         button:
           enable: true
           name: "Resume"
-          url: "#"
-          download: true
           newPage: false
+          url: /files/ManuelMartinezFloresCV_eng.pdf
         socialLinks:
           fontAwesomeIcons:
             - icon: fab fa-github
@@ -193,7 +203,7 @@ languages:
       contact:
         enable: true
         title: "Contact"
-        content: |-
+        subtitle: |-
           My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you! <br> My e-mail is:  **manuelalejandromartinezf[at]gmail[dot]com**.
 
   es:
@@ -230,7 +240,7 @@ languages:
           secondaryColor: "#212635"
       navbar:
         align: ms-auto
-        brandLogo: images/torus-c.svg
+        # brandLogo: images/torus-c.svg
         showBrandLogo: true
         brandName: "Manuel Martínez"
         disableSearch: true
@@ -303,7 +313,7 @@ languages:
       contact:
         enable: false
 
-relativeURLs: true
+relativeURLs: false
 canonifyURLs: true
 
 outputs:
@@ -315,46 +325,39 @@ outputs:
     - "HTML"
     - "RSS"
 
+# mediaTypes:
+#   application/pdf:
+#     suffixes: ["pdf"]
 
-pagination:
-  pagerSize: 3
+# outputFormats:
+#   PDF:
+#     mediaType: "application/pdf"
+#     isPlainText: false
+#     isHTML: false
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  math:
-    enable: true
 
-Menus:
-  main:
-    - identifier: Experience
-      name: Experience
-      url: "#experience"
-      weight: 1
-    - identifier: honors
-      name: Honors
-      url: "#honors"
-      weight: 1
-    - identifier: extension
-      name: Extension
-      url: "#extension"
-      weight: 1
-    - identifier: contact
-      name: Contact
-      url: "#contact"
-      weight: 0
+# pagination:
+#   pagerSize: 3
 
-#customScripts: -| # You can add custom scripts which will be added before </body> tag
-#  <script type="text/javascript"><!-- any script here --></script>
-copyright: "All rights reserved"
-pageNotFound: "Page not found"
-emailText: "Check out this site"
+# markup:
+#   goldmark:
+#     renderer:
+#       unsafe: true
+#   math:
+#     enable: true
 
-datesFormat:
-  article: "Jan 2, 2006"
-  articleList: "Jan 2, 2006"
-  articleRecent: "Jan 2, 2006"
+
+
+# #customScripts: -| # You can add custom scripts which will be added before </body> tag
+# #  <script type="text/javascript"><!-- any script here --></script>
+# copyright: "All rights reserved"
+# pageNotFound: "Page not found"
+# emailText: "Check out this site"
+
+# datesFormat:
+#   article: "Jan 2, 2006"
+#   articleList: "Jan 2, 2006"
+#   articleRecent: "Jan 2, 2006"
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>

@@ -23,6 +23,8 @@
 {{ if .Site.Language.Params.navbar }}
     {{ $navbar = .Site.Language.Params.navbar }}
 {{ end }}
+{{ $animate := .Site.Language.Params.animate }}
+{{ if not $animate }}{{ $animate = .Site.Params.animate }}{{ end }}
 {{ $showNavBarOnScrollUp := false }}
 {{ if $navbar.stickyNavBar.enable | default false }}
 {{ $showNavBarOnScrollUp = $navbar.stickyNavBar.showOnScrollUp | default false }}
@@ -55,18 +57,15 @@
 
 <!-- Navbar -->
 <header id="profileHeader" data-show-nav-on-scroll-up="{{ if $showNavBarOnScrollUp }}true{{ else }}false{{ end }}">
-    <nav class="pt-3 navbar navbar-expand-lg {{ if (or .Site.Language.Params.animate .Site.Params.animate) }}animate{{ end }}">
+    <nav class="pt-3 navbar navbar-expand-lg {{ if $animate }}animate{{ end }}">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             <!-- navbar brand -->
             <a class="navbar-brand primary-font text-wrap" href="{{ .Site.BaseURL | relURL }}">
-                {{ $favicon := .Site.Params.favicon }}
+                {{ $favicon := .Site.Language.Params.favicon }}
                 {{ if .Site.Language.Params.favicon }}{{ $favicon = .Site.Language.Params.favicon }}{{ end }}
                 {{ $brandLogo := $navbar.brandLogo | default $favicon }}
-                {{ if and (or $favicon $brandLogo) ($navbar.showBrandLogo | default true) }}
-                <img src="{{ $brandLogo }}" width="100" height="70" class="d-inline-block align-center">
-                {{ $navbar.brandName | default .Site.Params.title }}
-                {{ else }}
-                {{ $navbar.brandName | default .Site.Params.title }}
+                {{ if $favicon }}
+                <img src="{{ $favicon }}" width="100" height="70" class="d-inline-block align-center">
                 {{ end }}
             </a>
 
@@ -91,13 +90,13 @@
                     {{ if not ($navbar.disableSearch | default false) }}
                         <li class="nav-item navbar-text d-block d-md-none">
                             <div class="nav-link">
-                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='{{ .Site.Params.navbar.searchPlaceholder | default "Ctrl + k to Search..."}}' aria-label="Search" oninput="searchOnChange(event)">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='{{ $navbar.searchPlaceholder | default "Ctrl + k to Search..."}}' aria-label="Search" oninput="searchOnChange(event)">
                             </div>
                         </li>
                     {{ end }}
 
-                    {{ $about := .Site.Params.about }}
-                    {{ if .Site.Language.Params.about }}{{ $about = .Site.Language.Params.about }}{{ end }}
+                    {{ $about := .Site.Language.Params.about }}
+                    {{ if not $about }}{{ $about = .Site.Params.about }}{{ end }}
                     {{ if and ($about.enable | default false) (not ($navbar.menus.disableAbout | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#about" aria-label="about">
@@ -106,52 +105,19 @@
                     </li>
                     {{ end }}
 
-                    {{ $experience := .Site.Params.experience }}
-                    {{ if .Site.Language.Params.experience }}{{ $experience = .Site.Language.Params.experience }}{{ end }}
+                    <!-- {{ $experience := .Site.Language.Params.experience }}
+                    {{ if not $experience }}{{ $experience = .Site.Params.experience }}{{ end }}
                     {{ if and ($experience.enable | default false) (not ($navbar.menus.disableExperience | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#experience"
                             aria-label="experience">
-                            {{ $experience.title | default "Experience" }}
+                            {{ $experience.shortTitle | default "Experience" }}
                         </a>
                     </li>
                     {{ end }}
 
-                    {{ $education := .Site.Params.education }}
-                    {{ if .Site.Language.Params.education }}{{ $education = .Site.Language.Params.education }}{{ end }}
-                    {{ if and ($education.enable | default false) (not ($navbar.menus.disableEducation | default false)) }}
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#education"
-                            aria-label="education">
-                            {{ $education.title | default "Education" }}
-                        </a>
-                    </li>
-                    {{ end }}
-
-                    {{ $projects := .Site.Params.projects }}
-                    {{ if .Site.Language.Params.projects }}{{ $projects = .Site.Language.Params.projects }}{{ end }}
-                    {{ if and ($projects.enable | default false) (not ($navbar.menus.disableProjects | default false)) }}
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#projects"
-                            aria-label="projects">
-                            {{ $projects.title | default "Projects" }}
-                        </a>
-                    </li>
-                    {{ end }}
-
-                    {{ $achievements := .Site.Params.achievements }}
-                    {{ if .Site.Language.Params.achievements }}{{ $achievements = .Site.Language.Params.achievements }}{{ end }}
-                    {{ if and ($achievements.enable | default false) (not ($navbar.menus.disableAchievements | default false)) }}
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#achievements"
-                            aria-label="achievements">
-                            {{ $achievements.title | default "Achievements" }}
-                        </a>
-                    </li>
-                    {{ end }}
-
-                    {{ $contact := .Site.Params.contact }}
-                    {{ if .Site.Language.Params.contact }}{{ $contact = .Site.Language.Params.contact }}{{ end }}
+                    {{ $contact := .Site.Language.Params.contact }}
+                    {{ if not $contact }}{{ $contact = .Site.Params.contact }}{{ end }}
                     {{ if and ($contact.enable | default false) (not ($navbar.menus.disableContact | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#contact"
@@ -159,27 +125,27 @@
                             {{ $contact.title | default "Contact" }}
                         </a>
                     </li>
-                    {{ end }}
-
-                    {{ if and .Site.Menus.main (.Site.Params.navbar.enableSeparator | default false) }}
+                    {{ end }} -->
+                    {{ $menus := .Site.Language.Params.menus}}
+                    {{ if and $menus.main (.Site.Params.navbar.enableSeparator | default false) }}
                         <li class="nav-item navbar-text d-none d-lg-block d-xl-block"><div class="nav-link nav-link-sep"></div></li>
                         <div class="dropdown-divider"></div>
                     {{ end }}
 
                     <!-- custom menus from the user -->
-                    {{ range .Site.Menus.main }}
+                    {{ range $menus.main }}
                     {{ if .HasChildren }}
                     <!-- Dropdown menu -->
                     <li class="nav-item navbar-text dropdown">
-                        <a class="nav-link dropdown-toggle" href="{{ .URL }}" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="{{ .Title }}">
-                            {{ .Name }}
+                        <a class="nav-link dropdown-toggle" href="{{ .url }}" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="{{ .name }}">
+                            {{ .name }}
                         </a>
                         <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
                             {{ range .Children }}
-                            <a class="dropdown-item text-center nav-link" href="{{ .URL }}"
-                                title="{{ .Title }}">
-                                {{ .Name }}
+                            <a class="dropdown-item text-center nav-link" href="{{ .url }}"
+                                title="{{ .name }}">
+                                {{ .name }}
                             </a>
                             {{ end }}
                         </div>
@@ -187,16 +153,16 @@
                     {{else}}
                     <!-- Single menu item -->
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{.URL}}" title="{{ .Title }}">
+                        <a class="nav-link" href="{{.url}}" title="{{ .name }}">
                             {{ .Pre }}
-                            {{ .Name }}
+                            {{ .name }}
                         </a>
                     </li>
                     {{end}}
                     {{end}}
 
-                    {{ $themeParams := .Site.Params.theme }}
-                    {{ if .Site.Language.Params.theme }}{{ $themeParams = .Site.Language.Params.theme }}{{ end }}
+                    {{ $themeParams := .Site.Language.Params.theme }}
+                    {{ if not $themeParams }}{{ $themeParams = .Site.Params.theme }}{{ end }}
                     {{ if (not $themeParams.disableThemeToggle | default false) }}
                     <li class="nav-item navbar-text">
                         <!-- darkmode mode toggle -->

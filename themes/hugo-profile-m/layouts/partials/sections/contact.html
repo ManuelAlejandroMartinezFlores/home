@@ -6,7 +6,7 @@
             <div class="col-12 text-center">
                 <h3>{{ $contact.title }}</h3>
                 {{ if $contact.subtitle }}
-                <p class="subtitle">{{ $contact.subtitle }}</p>
+                <p class="subtitle">{{ $contact.subtitle | markdownify }}</p>
                 {{ end }}
             </div>
         </div>
