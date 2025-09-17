@@ -1,0 +1,32 @@
+{{ if or (.Site.Params.extension.enable | default false) (.Site.Language.Params.extension.enable) }}
+<section id="extension" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ with .Site.Params.extension.title }}{{ . }}{{ else if .Site.Language.Params.extension.title }}{{ .Site.Language.Params.extension.title }}{{ else }}Extension{{ end }}</h3>
+        <div class="row justify-content-center py-5">
+            <div class="col-12 col-md-10">
+                <div class="row">
+                    {{ $items := .Site.Params.extension.items }}
+                    {{ if .Site.Language.Params.extension.items }}
+                        {{ $items = .Site.Language.Params.extension.items }}
+                    {{ end }}
+                    {{ range $items }}
+                    <div class="col-12 mb-3">
+                        <div class="card bg-transparent">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ .title }}</h5>
+                                <div class="card-text">{{ .content | markdownify }}</div>
+                                {{ if .url }}
+                                <div class="mt-2">
+                                    <a href="{{ .url }}" target="_blank">{{ .url }}</a>
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

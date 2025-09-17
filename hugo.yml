@@ -3,6 +3,61 @@ languageCode: "en-us"
 title: "Manuel Martinez"
 theme: hugo-profile-m
 
+defaultContentLanguage: en
+
+languages:
+  en:
+    languageName: "English"
+    languageCode: "en-us"
+  es:
+    languageName: "Español"
+    languageCode: "es"
+    params:
+      hero:
+        title: "Manuel Alejandro Martínez Flores."
+        subtitle: "Matemático"
+      experience:
+        enable: true
+        title: "Posiciones académicas y experiencia profesional"
+        items:
+          - job: "B.Sc. in Applied Mathematics"
+            company: "Universidad del Valle de Guatemala"
+            companyUrl: ""
+            date: "2021 - 2025"
+            content: "Estudiante de pregrado en Matemáticas Aplicadas."
+      publications:
+        enable: true
+        title: "Publicaciones científicas"
+        items:
+          - title: "Boundedness of pseudo-differential operators on Hardy spaces"
+            content: |-
+              (2025) Enviado. Con: Duván Cardona. Estudio sobre estimaciones en H^p y L^p para operadores pseudo-diferenciales en el toro.
+            links:
+              - name: arXiv
+                url: https://arxiv.org/abs/2505.01573
+      extension:
+        enable: true
+        title: "Extensión científica"
+        items:
+          - title: "Seminario: Análisis de Fourier discreto y aplicaciones"
+            content: |-
+              Seminario invitado en la Universidad del Valle de Guatemala sobre aplicaciones del análisis de Fourier discreto.
+            url: "#"
+      honors:
+        enable: true
+        title: "Premios, honores y becas"
+      # Disable other sections for the Spanish homepage
+      about:
+        enable: false
+      education:
+        enable: false
+      projects:
+        enable: false
+      achievements:
+        enable: false
+      contact:
+        enable: false
+
 relativeURLs: true
 canonifyURLs: true
 
