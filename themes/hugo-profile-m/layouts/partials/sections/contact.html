@@ -1,95 +1,27 @@
-{{ $contact := .Site.Language.Params.contact }}{{ $contact := .Site.Language.Params.contact }}
-
+{{ $contact := .Site.Language.Params.contact }}
 {{ if $contact.enable | default false }}
-
-<section id="contact" class="py-5"><section id="contact">{{ if $contact.enable | default false }}
-
+<section id="contact" class="py-5">
     <div class="container">
-
-        <div class="row justify-content-center">    <div class="container-fluid section-holder d-flex"><section id="contact" class="py-5">
-
-            <div class="col-md-8 text-center">
-
-                <h3 class="text-center">{{ $contact.title }}</h3>        <div class="container">    <div class="container">
-
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>{{ $contact.title }}</h3>
                 {{ if $contact.subtitle }}
-
-                <div class="subtitle">{{ $contact.subtitle }}</div>            <div class="row justify-content-center">        <h3 class="text-center">{{ $contact.title | default "Get in Touch" }}</h3>
-
+                <p class="subtitle">{{ $contact.subtitle }}</p>
                 {{ end }}
-
-            </div>                <div class="col-md-8 text-center">        <div class="px-0 px-md-5 px-lg-5">
-
-        </div>
-
-        <div class="row justify-content-center mt-3">                    <h2 class="title">{{ $contact.title }}</h2>            <div class="row justify-content-center px-md-5">
-
-            <div class="col-lg-8">
-
-                <div class="contact-links d-flex flex-wrap justify-content-center">                    {{ if $contact.subtitle }}                <div class="col-md-8 py-3">
-
-                    {{ range $contact.links }}
-
-                    <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .title }}" class="p-3">                    <div class="subtitle">{{ $contact.subtitle }}</div>                    <div class="text-center">
-
-                        <i class="{{ .icon }} fa-2x"></i>
-
-                    </a>                    {{ end }}                        {{ $contact.content | emojify | markdownify }}
-
-                    {{ end }}
-
-                </div>                </div>                    </div>
-
             </div>
-
-        </div>            </div>                    {{ if $contact.formspree.enable | default false }}
-
-    </div>
-
-</section>            <div class="row justify-content-center mt-3">                    <div class="row justify-content-center">
-
-{{ end }}
-                <div class="col-lg-8">                        <form id="contact-form" action="https://formspree.io/f/{{ $contact.formspree.formId }}" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
-
-                    <div class="contact-links d-flex flex-wrap justify-content-center">                            <div class="form-group pt-3">
-
-                        {{ range $contact.links }}                                <input type="email" class="form-control"  name="email" required="true" placeholder='{{ $contact.formspree.emailCaption | emojify | default "Enter your email" }}'>
-
-                        <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .title }}">                            </div>
-
-                            <i class="{{ .icon }} fa-2x"></i>                            <div class="form-group pt-3">
-
-                        </a>                                <textarea class="form-control" name="message" required="true" placeholder='{{ $contact.formspree.messageCaption | emojify | default "Enter your message" }}' rows="{{ $contact.formspree.messageRows | default 3 }}"></textarea>
-
-                        {{ end }}                            </div>
-
-                    </div>                            <div class="form-group text-center pt-3">
-
-                </div>                                <button type="submit" class="btn">{{ $contact.btnName | default "Get in Touch" }}</button>
-
-            </div>                            </div>
-
-        </div>                        </form>
-
-    </div>                    </div>
-
-</section>                    {{ else if or ($contact.email)  ($contact.btnLink) }}
-
-{{ end }}                    <div class="text-center pt-3">
-                        <a 
-                            href='{{ if $contact.btnLink }}{{ $contact.btnLink | default "#" }}{{ else }}mailto:{{ $contact.email }}{{ end }}'
-                            target="_blank"
-                            class="btn"
-                        >
-                            {{ $contact.btnName | default "Get in Touch" }}
-                        </a>
-                    </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8">
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    {{ range $contact.links }}
+                    <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .title }}">
+                        <i class="{{ .icon }} fa-2x"></i>
+                    </a>
                     {{ end }}
                 </div>
             </div>
         </div>
     </div>
-    <div id="contact-form-status"></div>
 </section>
 {{ end }}
 
