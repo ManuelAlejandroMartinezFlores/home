@@ -15,7 +15,9 @@
   </title>
 </head>
 
-<body class="light">
+{{ $themeDefault := .Site.Language.Params.theme.defaultTheme }}
+{{ if not $themeDefault }}{{ $themeDefault = (or .Site.Params.theme.defaultTheme "light") }}{{ end }}
+<body class="{{ if eq $themeDefault "dark" }}dark{{ else }}light{{ end }}">
   <!-- javascripts -->
   <!-- <script src="/js/jquery-3.6.0.min.js"></script> -->
 

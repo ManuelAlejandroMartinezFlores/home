@@ -163,6 +163,8 @@
 
                     {{ $themeParams := .Site.Language.Params.theme }}
                     {{ if not $themeParams }}{{ $themeParams = .Site.Params.theme }}{{ end }}
+                    <!-- language switcher -->
+                    
                     {{ if (not $themeParams.disableThemeToggle | default false) }}
                     <li class="nav-item navbar-text">
                         <!-- darkmode mode toggle -->
@@ -186,7 +188,9 @@
                         </div>
                     </li>
                     {{ end }}
-
+                    <li class="nav-item navbar-text">
+                        {{ partial "lang-switcher.html" . }}
+                    </li>
                 </ul>
 
             </div>

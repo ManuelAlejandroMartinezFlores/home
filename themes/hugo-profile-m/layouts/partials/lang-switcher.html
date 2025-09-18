@@ -1,0 +1,15 @@
+<ul class="nav lang-switcher align-items-center">
+  {{ $currentLang := .Site.Language.Lang }}
+  {{ range .Site.Languages }}
+    {{ $isCurrentLang := eq .Lang $currentLang }}
+    <li class="nav-item px-1">
+      {{ if $isCurrentLang }}
+        <span class="nav-link active" aria-current="page">{{ .LanguageName }}</span>
+      {{ else }}
+        {{ $lang := .Lang }}
+        {{ if eq $lang "en" }}{{ $lang = "" }}{{ end }}
+        <a class="nav-link" href="/{{ $lang }}" hreflang="{{ .Lang }}">{{ .LanguageName }}</a>
+      {{ end }}
+    </li>
+  {{ end }}
+</ul>

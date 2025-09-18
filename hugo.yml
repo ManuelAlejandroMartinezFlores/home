@@ -325,27 +325,27 @@ languages:
         enable: true
         title: "Posiciones Académicas y Experiencia Profesional"
         items:
-          - title: "Joven Investigador"
+          - title: "Joven investigador"
             affiliation: "Comunidad Internacional de Matemáticos (ICMAM) Latinoamérica"
             date: "Mar 2025 - presente"
             content: |-
               Investigué las propiedades de continuidad de operadores pseudo-diferenciales toroidales en espacios de funciones como espacios de Lebesgue (ponderados), espacios de Hardy, espacios de Sobolev y espacios de Besov. Asesorado por <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
-          - title: "Investigador Interno"
+          - title: "Pasante de investigación"
             affiliation: "Centro de Estudios en Informática Aplicada - Universidad del Valle de Guatemala"
             date: "Feb 2025 - presente"
             content: |-
               Implementando algoritmos para realizar operaciones en grafos lineales y desarrollando modelos para extraer información de grafos lineales.
-          - title: "Profesor de Matemáticas de Secundaria"
+          - title: "High School Math Teacher"
             affiliation: "Village School"
             date: "Jul 2024 - Jun 2025"
             content: |-
               Planificando y ejecutando 25 horas semanales de clases para tres secciones de Geometría y una de Estadística para un total de alrededor de 50 estudiantes. Evaluación y refuerzo de estudiantes y responsable de reportes a padres de familia.
-          - title: "Profesor Asistente"
+          - title: "Profesor auxiliar"
             affiliation: "Universidad del Valle de Guatemala"
             date: "Ene 2022 - presente"
             content: |-
               Respondí preguntas y califiqué tareas y exámenes para estudiantes en: Cálculo III (cálculo vectorial) durante dos semestres, Física II (dinámica rotacional) durante un semestre, Ecuaciones Diferenciales II (ecuaciones diferenciales en derivadas parciales) durante un semestre y Análisis de la Variable Real I (continuidad y diferenciación de funciones reales) durante un semestre.
-          - title: "Asistente de Laboratorio"
+          - title: "Asistente de laboratorio"
             affiliation: "Universidad del Valle de Guatemala"
             date: "Jun 2022 - Jun 2024"
             content: |-
@@ -358,25 +358,25 @@ languages:
         enable: true
         title: "Publicaciones Científicas"
         items:
-          - title: "Estimaciones para operadores pseudo-diferenciales en el toro revisitadas. I"
+          - title: "Estimates for pseudo-differential operators on the torus revisited. I"
             content: |-
               (2025) Con: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Por aparecer en Journal of Mathematical Analysis and Applications. <br> En este artículo probamos estimaciones \(L^p\) para clases de Hörmander de operadores pseudo-diferenciales en el toro \(\mathbb{T}^n\). Los resultados se presentan en el contexto del cálculo simbólico global de Ruzhansky y Turunen en \(\mathbb{T}^n\times\mathbb{Z}^n\) usando el análisis de Fourier discreto en el toro que extiende las clases usuales \((\rho,\delta)\)-Hörmander en \(\mathbb{T}^n\). Los resultados principales extienden el método de Álvarez y Hounie para \(\mathbb{R}^n\) al toro, y el teorema de acotación \(L^p\) de Fefferman en el contexto toroidal permitiendo la condición \(\delta\geq\rho\). Cuando \(\delta \leq \rho\), nuestros resultados recuperan las estimaciones disponibles en la literatura.
             featured:
               name: DOI
               link: https://doi.org/10.1016/j.jmaa.2025.129959
-          - title: "Acotación de operadores pseudo-diferenciales en el toro vía estimaciones del núcleo"
+          - title: "Boundedness of pseudo-differential operators on the torus via kernel estimates"
             content: |-
               (2025) Con: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Por aparecer en Trends in Mathematics, Birkhäuser.
-          - title: "Estimaciones para operadores pseudo-diferenciales en el toro revisitadas. II"
+          - title: "Estimates for pseudo-differential operators on the torus revisited. II"
             content: |-
               (2025) Con: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Enviado para revisión. <br> En este artículo continuamos nuestro programa de revisitar los nuevos aspectos sobre las propiedades de acotación de operadores pseudo-diferenciales en el toro. Aquí probamos estimaciones \(H^p\)-\(L^p\) y \(H^p\) para clases de Hörmander de operadores pseudo-diferenciales en el toro \(\mathbb{T}^n\) para \(p\leq 1\). Los resultados se presentan en el contexto del análisis simbólico global desarrollado por Ruzhansky y Turunen en \(\mathbb{T}^n \times \mathbb{Z}^n\) usando el análisis de Fourier discreto, que extiende las clases \((\rho, \delta)\)-Hörmander en \(\mathbb{T}^n\) definidas por sistemas de coordenadas locales. Estos resultados extienden aquellos probados por Álvarez y Hounie para el caso Euclideano, considerando incluso el caso \(\rho\leq\delta\).
             featured:
               name: arXiv
               link: https://arxiv.org/abs/2505.01573
-          - title: "Acotación de operadores pseudo-diferenciales toroidales en espacios de Hardy"
+          - title: "Boundedness of toroidal pseudo-differential operator on Hardy spaces"
             content: |-
               (2025) Con: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Por aparecer en Trends in Mathematics, Birkhäuser.
-          - title: "Estimaciones para operadores pseudo-diferenciales en el toro revisitadas. III"
+          - title: "Estimates for pseudo-differential operators on the torus revisited. III"
             content: |-
               (2025) Con: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Enviado para revisión. <br> Este artículo finaliza el objetivo de los autores iniciado en dos manuscritos previos dedicados a revisitar las propiedades de continuidad de operadores pseudo-diferenciales toroidales con símbolos en las clases de Hörmander. Aquí probamos estimaciones puntuales en términos de la función maximal aguda de Fefferman-Stein y de la función maximal de Hardy-Littlewood. Combinando estas estimaciones con las propiedades de la clase de pesos de Muckenhoupt \(A_p\) obtenemos teoremas de acotación para operadores pseudo-diferenciales entre espacios de Lebesgue ponderados en el toro \(L^p(w)\). Estos resultados se dan en el contexto del análisis simbólico global definido en \(\mathbb{T}^n\times \mathbb{Z}^n\) como desarrollado por Ruzhansky y Turunen usando el análisis de Fourier discreto, y extienden aquellos de Park y Tomita disponibles en el caso Euclideano. Además, incluimos resultados de continuidad en espacios de Sobolev \(W^s_p\) y en espacios de Besov \(B^s_{p,q}\) en el toro. Nuestras técnicas están tomadas de Park y Tomita y consideramos su extensión toroidal aquí para la completitud de la acotación de operadores pseudo-diferenciales toroidales con respecto a la literatura actual.
             featured:
@@ -392,7 +392,7 @@ languages:
           - title: "Seminario Latinoamericano de Matemáticas UMALCA-ICMAM"
             content: |-
               Miembro del comité organizador.
-          - title: "Boletín UMALCA-ICMAM"
+          - title: "Newsletter UMALCA-ICMAM"
             content: |-
               Miembro del consejo editorial.
           - title: "Conferencia Satélite ICMAM en Análisis y EDP"
