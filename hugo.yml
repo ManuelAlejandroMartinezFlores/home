@@ -69,13 +69,17 @@ languages:
             name: Experience
             url: "#experience"
             weight: 1
-          - identifier: honors
-            name: Honors
-            url: "#honors"
+          - identifier: publications
+            name: Publications
+            url: "#publications"
             weight: 1
           - identifier: extension
             name: Extension
             url: "#extension"
+            weight: 1
+          - identifier: honors
+            name: Honors
+            url: "#honors"
             weight: 1
           - identifier: contact
             name: Contact
