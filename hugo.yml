@@ -23,7 +23,7 @@ languages:
         enable: false
       title: "Manuel Martínez"
       description: "About me and my projects"
-      favicon: images/torus-c.svg
+      favicon: /images/torus-c.svg
       useBootstrapCDN: false
       mathjax: true
       animate: true
