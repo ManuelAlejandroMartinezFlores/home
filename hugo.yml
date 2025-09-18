@@ -23,7 +23,7 @@ languages:
         enable: false
       title: "Manuel Martínez"
       description: "About me and my projects"
-      favicon: /images/torus-c.svg
+      favicon: images/torus-c.svg
       useBootstrapCDN: false
       mathjax: true
       animate: true
@@ -86,14 +86,14 @@ languages:
         content: |-
           I am an Applied Mathematics undergraduate student from Guatemala. Right now I am interested in working in harmonic analysis, 
           specificaly in pseudo-differential operators.
-        image: /images/Foto.jpg
+        image: images/Foto.jpg
         bottomImage:
           enable: true
         button:
           enable: true
           name: "Resume"
           newPage: false
-          url: /files/ManuelMartinezFloresCV_eng.pdf
+          url: files/ManuelMartinezFloresCV_eng.pdf
         socialLinks:
           fontAwesomeIcons:
             - icon: fab fa-github
@@ -311,7 +311,7 @@ languages:
       contact:
         enable: false
 
-relativeURLs: false
+relativeURLs: true
 canonifyURLs: true
 
 outputs:
