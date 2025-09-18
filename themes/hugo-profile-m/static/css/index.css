@@ -192,102 +192,6 @@ header .navbar.animate {
     width: 100%;
 }
 
-/* Experience */
-
-
-#experience .container > h3 {
-    color: var(--text-secondary-color) !important;
-}
-
-#experience .row .index {
-    opacity: 0.8;
-    padding: 13px 20px;
-    line-height: 0%;
-    border-radius: 50%;
-    max-height: 50px;
-    z-index: 2;
-    background-color: var(--primary-color) !important;
-    color: var(--secondary-color) !important;
-    font-weight: bold;
-}
-
-#experience .card * {
-    background-color: var(--secondary-color) !important;
-}
-
-#experience .card {
-    border-radius: 1.5rem;
-    box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
-    border: 2px solid var(--text-secondary-color) !important;
-    transition: box-shadow .2s linear,opacity .2s linear;
-    transition: transform 0.2s;
-}
-
-#experience .card .card-body {
-    border-radius: 1.5rem;
-    padding: 1rem;
-}
-
-@media all and (max-width:768px) {
-    #experience .card .card-body {
-        padding: 1rem;
-        border-radius: 1.5rem;
-        font-size: 15px;
-    }
-    #experience .container > h5 {
-        font-size: 20px;
-    }
-}
-
-#experience .card:hover {
-    transition: 0.3s;
-    box-shadow: 0 4px 11px rgb(15 80 100 / 16%);
-    border: 2px solid var(--primary-color) !important;
-}
-
-#experience .card .card-body .experience-content a {
-    color: var(--text-link-color) !important;
-    text-decoration: none;
-    opacity: 0.9;
-}
-
-#experience .card .card-body > a h6 {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--text-link-color) !important;
-}
-
-#experience .card .card-body > a h6::after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 2px;
-    bottom: 0.37em;
-    background-color: var(--primary-color);
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-    opacity: 0.5;
-}
-
-#experience .card .card-body > a h6:hover::after, #experience .card .card-body > a h6:focus::after, #experience .card .card-body > a h6:active::after {
-    width: 100%;
-}
-
-#experience .card .card-body a.btn {
-    opacity: 0.9;
-    border: 1px solid var(--primary-color) !important;
-    color: var(--text-color) !important;
-    border-radius: .75rem;
-    box-shadow: none;
-    transition: none;
-}
-
-#experience .card .card-body a.btn:hover {
-    opacity: 0.8;
-}
-
-
-
-
 
 
 /* about me */
@@ -356,98 +260,6 @@ header .navbar.animate {
     width: 100%;
 }
 
-
-/* Honors */
-
-#honors .container > h3 {
-    color: var(--text-secondary-color) !important;
-}
-
-#honors .row .index {
-    opacity: 0.8;
-    padding: 13px 20px;
-    line-height: 0%;
-    border-radius: 50%;
-    max-height: 50px;
-    z-index: 2;
-    background-color: var(--primary-color) !important;
-    color: var(--secondary-color) !important;
-    font-weight: bold;
-}
-
-#honors .card * {
-    background-color: var(--secondary-color) !important;
-}
-
-#honors .card {
-    border-radius: 1.5rem;
-    box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
-    border: 2px solid var(--text-secondary-color) !important;
-    transition: box-shadow .2s linear,opacity .2s linear;
-    transition: transform 0.2s;
-}
-
-#honors .card .card-body {
-    border-radius: 1.5rem;
-    padding: 1rem;
-}
-
-@media all and (max-width:768px) {
-    #honors .card .card-body {
-        padding: 1rem;
-        border-radius: 1.5rem;
-        font-size: 15px;
-    }
-    #honors .container > h5 {
-        font-size: 20px;
-    }
-}
-
-#honors .card:hover {
-    transition: 0.3s;
-    box-shadow: 0 4px 11px rgb(15 80 100 / 16%);
-    border: 2px solid var(--primary-color) !important;
-}
-
-#honors .card .card-body .honors-content a {
-    color: var(--text-link-color) !important;
-    text-decoration: none;
-    opacity: 0.9;
-}
-
-#honors .card .card-body > a h6 {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--text-link-color) !important;
-}
-
-#honors .card .card-body > a h6::after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 2px;
-    bottom: 0.37em;
-    background-color: var(--primary-color);
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-    opacity: 0.5;
-}
-
-#honors .card .card-body > a h6:hover::after, #honors .card .card-body > a h6:focus::after, #honors .card .card-body > a h6:active::after {
-    width: 100%;
-}
-
-#honors .card .card-body a.btn {
-    opacity: 0.9;
-    border: 1px solid var(--primary-color) !important;
-    color: var(--text-color) !important;
-    border-radius: .75rem;
-    box-shadow: none;
-    transition: none;
-}
-
-#honors .card .card-body a.btn:hover {
-    opacity: 0.8;
-}
 
 /* achievements */
 
@@ -712,6 +524,167 @@ header .navbar.animate {
 }
 
 #extension img {
+    display: inline-block !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+/* Experience */
+
+#experience h3 {
+    color: var(--text-secondary-color) !important;
+}
+
+#experience a {
+    text-decoration: none;
+    color: var(--text-link-color) !important;
+}
+
+#experience .badge {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    margin: 0 1%;
+}
+
+#experience .card {
+    background-color: var(--secondary-color) !important;
+    box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
+    /* min-height: 400px; */
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: none !important;
+}
+
+#experience .card:hover {
+    box-shadow: 0 0 11px rgb(15 80 100 / 20%);
+    transition: transform 0.3s;
+    transform: translateY(-7px);
+}
+
+#experience .card .card-head {
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border: none !important;
+}
+
+#experience .card .card-footer {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#experience .card:hover .card-img-top {
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+}
+
+#experience .card-img-top {
+    transition: transform 0.3s;
+}
+
+#experience .float-end .btn {
+    transition: none;
+    border-radius: .5rem !important;
+    border-color: var(--primary-color) !important;
+}
+
+#experience .float-end .btn:focus {
+    box-shadow: none !important;
+}
+
+#experience .col-lg-4, 
+#experience .col-md-6 {
+    flex: 1 1 100% !important; /* Force full width */
+    max-width: 100% !important;
+}
+
+#experience img {
+    display: inline-block !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Honors */
+
+#honors h3 {
+    color: var(--text-secondary-color) !important;
+}
+
+#honors a {
+    text-decoration: none;
+    color: var(--text-link-color) !important;
+}
+
+#honors .badge {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    margin: 0 1%;
+}
+
+#honors .card {
+    background-color: var(--secondary-color) !important;
+    box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
+    /* min-height: 400px; */
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: none !important;
+}
+
+#honors .card:hover {
+    box-shadow: 0 0 11px rgb(15 80 100 / 20%);
+    transition: transform 0.3s;
+    transform: translateY(-7px);
+}
+
+#honors .card .card-head {
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border: none !important;
+}
+
+#honors .card .card-footer {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#honors .card:hover .card-img-top {
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+}
+
+#honors .card-img-top {
+    transition: transform 0.3s;
+}
+
+#honors .float-end .btn {
+    transition: none;
+    border-radius: .5rem !important;
+    border-color: var(--primary-color) !important;
+}
+
+#honors .float-end .btn:focus {
+    box-shadow: none !important;
+}
+
+#honors .col-lg-4, 
+#honors .col-md-6 {
+    flex: 1 1 100% !important; /* Force full width */
+    max-width: 100% !important;
+}
+
+#honors img {
     display: inline-block !important;
     width: 1rem !important;
     height: 1rem !important;

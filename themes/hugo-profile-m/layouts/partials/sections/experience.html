@@ -6,7 +6,7 @@
         <div class="row justify-content-center py-5">
                         {{ $indexMenu := $experience.index }}
                         {{ range $index, $element := $experience.items }}
-            <div class="col-12 p-0">
+            <div class="col-12 col-md-10">
                 <div class="row row align-items-center justify-content-center m-1 mb-4">
                     {{ if $indexMenu }}
                     <div class="col-md-1 text-center me-2 p-0 d-none d-md-block">
@@ -18,7 +18,7 @@
                     </div>
                     {{ end }}
 
-                    <div class="col-md-9">
+                    <div class="mb-4">
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-end">
@@ -26,7 +26,7 @@
                                 </div>
                                 <h5 class="card-title">{{ .title }}</h5>
                                 {{ .name }}
-                                <div class="py-1 honors-content">
+                                <div class="py-1 experience-content">
                                     {{ .content | markdownify}}
                                 </div>
 
