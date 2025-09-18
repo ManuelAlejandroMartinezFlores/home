@@ -93,7 +93,7 @@ languages:
         content: |-
           I am an Applied Mathematics undergraduate student from Guatemala. Right now I am interested in working in harmonic analysis, 
           specificaly in pseudo-differential operators.
-        image: images/Foto.jpg
+        image: /images/Foto.jpg
         bottomImage:
           enable: true
         button:
@@ -307,7 +307,7 @@ languages:
         content: |-
           Soy un estudiante de pregrado en Matemática Aplicada de Guatemala. Actualmente estoy interesado en trabajar en análisis armónico, 
           específicamente en operadores pseudo-diferenciales.
-        image: images/Foto.jpg
+        image: /images/Foto.jpg
         bottomImage:
           enable: true
         button:
