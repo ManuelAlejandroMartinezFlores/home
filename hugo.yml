@@ -311,8 +311,8 @@ languages:
       contact:
         enable: false
 
-relativeURLs: true
-canonifyURLs: true
+relativeURLs: false
+canonifyURLs: false
 
 outputs:
   home:
