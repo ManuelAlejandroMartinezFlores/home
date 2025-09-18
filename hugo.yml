@@ -226,11 +226,21 @@ languages:
 
   es:
     languageName: "Español"
-    languageCode: "es"
+    languageCode: "es-es"
     params:
+      about:
+        enable: false
+      education:
+        enable: false
+      projects:
+        enable: false
+      achievements:
+        enable: false
+      contact:
+        enable: false
       title: "Manuel Martínez"
-      description: "Acerca de mi y mis proyectos"
-      favicon: images/torus-c.svg
+      description: "Acerca de mí y mis proyectos"
+      favicon: /images/torus-c.svg
       useBootstrapCDN: false
       mathjax: true
       animate: true
@@ -244,18 +254,18 @@ languages:
         textColor: "#343a40"
         secondaryTextColor: "#6c757d"
         textLinkColor: "#303090"
-        backgroundColor: "#eaedf0"
+        backgroundColor: "#eeefef"
         secondaryBackgroundColor: "#64ffda1a"
-        primaryColor: "#303090"
+        primaryColor: "#304070"
         secondaryColor: "#f8f9fa"
         darkmode:
           textColor: "#e4e6eb"
-          secondaryTextColor: "#b0b3b8"
+          secondaryTextColor: "#b4b6bb"
           textLinkColor: "#ccddff"
-          backgroundColor: "#101925"
-          secondaryBackgroundColor: "#212635"
-          primaryColor: "#eeeeff"
-          secondaryColor: "#212635"
+          backgroundColor: "#001020"
+          secondaryBackgroundColor: "#ffffff"
+          primaryColor: "#ddddee"
+          secondaryColor: "#152030"
       navbar:
         align: ms-auto
         # brandLogo: images/torus-c.svg
@@ -267,69 +277,166 @@ languages:
           enable: true
           showOnScrollUp: true
         enableSeparator: false
-        menus:
-          disableAbout: true
-          disableExperience: false
-          disableEducation: true
-          disableProjects: true
-          disableAchievements: true
-          disableContact: true
+      menus:
+        main:
+          - identifier: experience
+            name: Experiencia
+            url: "#experience"
+            weight: 1
+          - identifier: publications
+            name: Publicaciones
+            url: "#publications"
+            weight: 1
+          - identifier: extension
+            name: Extensión
+            url: "#extension"
+            weight: 1
+          - identifier: honors
+            name: Reconocimientos
+            url: "#honors"
+            weight: 1
+          - identifier: contact
+            name: Contacto
+            url: "#contact"
+            weight: 0
       hero:
         enable: true
         intro: "Hola, mi nombre es"
         title: "Manuel Alejandro Martínez Flores."
         subtitle: "Matemático"
         content: |-
-          Estudiante de pregrado en Matemáticas Aplicadas.
-        image: /images/Foto.jpg
+          Soy un estudiante de pregrado en Matemática Aplicada de Guatemala. Actualmente estoy interesado en trabajar en análisis armónico, 
+          específicamente en operadores pseudo-diferenciales.
+        image: images/Foto.jpg
         bottomImage:
           enable: true
         button:
           enable: true
           name: "Currículum"
-          url: "#"
-          download: true
           newPage: false
+          url: files/ManuelMartinezFloresCV_eng.pdf
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/ManuelAlejandroMartinezFlores
+            - icon: fab fa-linkedin
+              url: https://www.linkedin.com/in/manuelamf
       experience:
         enable: true
-        title: "Posiciones académicas y experiencia profesional"
+        title: "Posiciones Académicas y Experiencia Profesional"
         items:
-          - job: "B.Sc. in Applied Mathematics"
-            company: "Universidad del Valle de Guatemala"
-            companyUrl: ""
+          - title: "Joven Investigador"
+            affiliation: "Comunidad Internacional de Matemáticos (ICMAM) Latinoamérica"
+            date: "Mar 2025 - presente"
+            content: |-
+              Investigué las propiedades de continuidad de operadores pseudo-diferenciales toroidales en espacios de funciones como espacios de Lebesgue (ponderados), espacios de Hardy, espacios de Sobolev y espacios de Besov. Asesorado por <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
+          - title: "Investigador Interno"
+            affiliation: "Centro de Estudios en Informática Aplicada - Universidad del Valle de Guatemala"
+            date: "Feb 2025 - presente"
+            content: |-
+              Implementando algoritmos para realizar operaciones en grafos lineales y desarrollando modelos para extraer información de grafos lineales.
+          - title: "Profesor de Matemáticas de Secundaria"
+            affiliation: "Village School"
+            date: "Jul 2024 - Jun 2025"
+            content: |-
+              Planificando y ejecutando 25 horas semanales de clases para tres secciones de Geometría y una de Estadística para un total de alrededor de 50 estudiantes. Evaluación y refuerzo de estudiantes y responsable de reportes a padres de familia.
+          - title: "Profesor Asistente"
+            affiliation: "Universidad del Valle de Guatemala"
+            date: "Ene 2022 - presente"
+            content: |-
+              Respondí preguntas y califiqué tareas y exámenes para estudiantes en: Cálculo III (cálculo vectorial) durante dos semestres, Física II (dinámica rotacional) durante un semestre, Ecuaciones Diferenciales II (ecuaciones diferenciales en derivadas parciales) durante un semestre y Análisis de la Variable Real I (continuidad y diferenciación de funciones reales) durante un semestre.
+          - title: "Asistente de Laboratorio"
+            affiliation: "Universidad del Valle de Guatemala"
+            date: "Jun 2022 - Jun 2024"
+            content: |-
+              Preparé equipo para experimentos de laboratorio, demostré su ejecución correcta y califiqué reportes de laboratorio para Física I (dinámica lineal) y Física II (dinámica rotacional).
+          - title: "Licenciatura en Matemática Aplicada"
+            affiliation: "Universidad del Valle de Guatemala"
             date: "2021 - 2025"
-            content: "Estudiante de pregrado en Matemáticas Aplicadas."
+            content: "Estudiante de pregrado en Matemática Aplicada (Promedio 97/100). Graduación esperada: Diciembre 2025."
       publications:
         enable: true
-        title: "Publicaciones científicas"
+        title: "Publicaciones Científicas"
         items:
-          - title: "Boundedness of pseudo-differential operators on Hardy spaces"
+          - title: "Estimaciones para operadores pseudo-diferenciales en el toro revisitadas. I"
             content: |-
-              (2025) Enviado. Con: Duván Cardona. Estudio sobre estimaciones en H^p y L^p para operadores pseudo-diferenciales en el toro.
-            links:
-              - name: arXiv
-                url: https://arxiv.org/abs/2505.01573
+              (2025) Con: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Por aparecer en Journal of Mathematical Analysis and Applications. <br> En este artículo probamos estimaciones \(L^p\) para clases de Hörmander de operadores pseudo-diferenciales en el toro \(\mathbb{T}^n\). Los resultados se presentan en el contexto del cálculo simbólico global de Ruzhansky y Turunen en \(\mathbb{T}^n\times\mathbb{Z}^n\) usando el análisis de Fourier discreto en el toro que extiende las clases usuales \((\rho,\delta)\)-Hörmander en \(\mathbb{T}^n\). Los resultados principales extienden el método de Álvarez y Hounie para \(\mathbb{R}^n\) al toro, y el teorema de acotación \(L^p\) de Fefferman en el contexto toroidal permitiendo la condición \(\delta\geq\rho\). Cuando \(\delta \leq \rho\), nuestros resultados recuperan las estimaciones disponibles en la literatura.
+            featured:
+              name: DOI
+              link: https://doi.org/10.1016/j.jmaa.2025.129959
+          - title: "Acotación de operadores pseudo-diferenciales en el toro vía estimaciones del núcleo"
+            content: |-
+              (2025) Con: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Por aparecer en Trends in Mathematics, Birkhäuser.
+          - title: "Estimaciones para operadores pseudo-diferenciales en el toro revisitadas. II"
+            content: |-
+              (2025) Con: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Enviado para revisión. <br> En este artículo continuamos nuestro programa de revisitar los nuevos aspectos sobre las propiedades de acotación de operadores pseudo-diferenciales en el toro. Aquí probamos estimaciones \(H^p\)-\(L^p\) y \(H^p\) para clases de Hörmander de operadores pseudo-diferenciales en el toro \(\mathbb{T}^n\) para \(p\leq 1\). Los resultados se presentan en el contexto del análisis simbólico global desarrollado por Ruzhansky y Turunen en \(\mathbb{T}^n \times \mathbb{Z}^n\) usando el análisis de Fourier discreto, que extiende las clases \((\rho, \delta)\)-Hörmander en \(\mathbb{T}^n\) definidas por sistemas de coordenadas locales. Estos resultados extienden aquellos probados por Álvarez y Hounie para el caso Euclideano, considerando incluso el caso \(\rho\leq\delta\).
+            featured:
+              name: arXiv
+              link: https://arxiv.org/abs/2505.01573
+          - title: "Acotación de operadores pseudo-diferenciales toroidales en espacios de Hardy"
+            content: |-
+              (2025) Con: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Por aparecer en Trends in Mathematics, Birkhäuser.
+          - title: "Estimaciones para operadores pseudo-diferenciales en el toro revisitadas. III"
+            content: |-
+              (2025) Con: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Enviado para revisión. <br> Este artículo finaliza el objetivo de los autores iniciado en dos manuscritos previos dedicados a revisitar las propiedades de continuidad de operadores pseudo-diferenciales toroidales con símbolos en las clases de Hörmander. Aquí probamos estimaciones puntuales en términos de la función maximal aguda de Fefferman-Stein y de la función maximal de Hardy-Littlewood. Combinando estas estimaciones con las propiedades de la clase de pesos de Muckenhoupt \(A_p\) obtenemos teoremas de acotación para operadores pseudo-diferenciales entre espacios de Lebesgue ponderados en el toro \(L^p(w)\). Estos resultados se dan en el contexto del análisis simbólico global definido en \(\mathbb{T}^n\times \mathbb{Z}^n\) como desarrollado por Ruzhansky y Turunen usando el análisis de Fourier discreto, y extienden aquellos de Park y Tomita disponibles en el caso Euclideano. Además, incluimos resultados de continuidad en espacios de Sobolev \(W^s_p\) y en espacios de Besov \(B^s_{p,q}\) en el toro. Nuestras técnicas están tomadas de Park y Tomita y consideramos su extensión toroidal aquí para la completitud de la acotación de operadores pseudo-diferenciales toroidales con respecto a la literatura actual.
+            featured:
+              name: arXiv
+              link: https://arxiv.org/abs/2508.13338
       extension:
         enable: true
-        title: "Extensión científica"
+        title: "Extensión Científica"
         items:
-          - title: "Seminario: Análisis de Fourier discreto y aplicaciones"
+          - title: "Congreso de la Sociedad Matemática Mexicana 2025"
             content: |-
-              Seminario invitado en la Universidad del Valle de Guatemala sobre aplicaciones del análisis de Fourier discreto.
-            url: "#"
+              Ponente (en preparación) con la charla de investigación "Operadores pseudo-diferenciales en el toro", presentando trabajo con Duván Cardona.
+          - title: "Seminario Latinoamericano de Matemáticas UMALCA-ICMAM"
+            content: |-
+              Miembro del comité organizador.
+          - title: "Boletín UMALCA-ICMAM"
+            content: |-
+              Miembro del consejo editorial.
+          - title: "Conferencia Satélite ICMAM en Análisis y EDP"
+            content: |-
+              Miembro del comité organizador junior.
+          - title: "Comunidad Internacional de Matemáticos (ICMAM) Latinoamérica"
+            content: |-
+              Miembro del consejo científico y miembro del comité científico. Actualizando y manteniendo el sitio web de ICMAM Centroamérica y el Caribe. Apoyando la coordinación de congresos satélite.
+          - title: "10º Congreso Estudiantil de Matemáticas y Física"
+            content: |-
+              Ponente con la charla informativa "Límites", explorando definiciones fundamentales de la Teoría de Categorías.
       honors:
         enable: true
-        title: "Premios, honores y becas"
-      about:
-        enable: false
-      education:
-        enable: false
-      projects:
-        enable: false
-      achievements:
-        enable: false
+        title: "Premios, Reconocimientos y Becas"
+        items:
+          - title: "EMALCA - elENA X - Argentina 2025"
+            content: "Becario para la escuela sobre Álgebras de Clústeres, Álgebra Conmutativa Computacional, Teoría de Ehrhart, Homología Persistente, Transformadores de Lie, Representaciones de Grupos Finitos, Deformación de Álgebras y Cohomología de Hochschild"
+            date: "2025"
+          - title: "EMALCA - Ecuador 2025"
+            content: "Becario para la escuela sobre Teoría de Galois Diferencial, Métodos numéricos para Sistemas Dinámicos, Álgebras de Clifford y Teoría de Grafos"
+            date: "2025"
+          - title: "EMALCA - Honduras 2025"
+            content: "Becario para la escuela sobre Teoría de Control, Aprendizaje Estadístico, Estadística de Alta Dimensión y Optimización Entera"
+            date: "2025"
+          - title: "Reconocimiento de Mérito Académico"
+            content: "Universidad del Valle de Guatemala - Otorgado por obtener un promedio mayor a 95/100"
+            date: "2021, 2022, 2023, 2024"
+          - title: "XXIII Escuela de Verano en Matemáticas"
+            content: "Centro de ciencias matemáticas, UNAM Morelia - Becario para la escuela sobre Teoría Geométrica de Grupos, Mapas en superficies, Métodos de conteo algebraicos, Geometría algebraica, Análisis Topológico de Datos"
+            date: "2024"
+          - title: "Olimpiada Iberoamericana de Matemáticas Universitarias (OIMU)"
+            content: "Medalla de Bronce"
+            date: "2023"
+            featuredLink:
+              enable: false 
+              url: "https://congresomatematicas.uvg.edu.gt/"
+          - title: "Beca de Liderazgo en Ciencias"
+            content: "Universidad del Valle de Guatemala - Beca para estudiar Matemática Aplicada"
+            date: "2020 - 2025"
       contact:
-        enable: false
+        enable: true
+        title: "Contacto"
+        subtitle: |-
+          Mi bandeja de entrada siempre está abierta. Ya sea que tengas una pregunta o solo quieras saludar, ¡haré mi mejor esfuerzo para responderte! <br> Mi correo electrónico es: **manuelalejandromartinezf[arroba]gmail[punto]com**.
 
 relativeURLs: false
 canonifyURLs: false
