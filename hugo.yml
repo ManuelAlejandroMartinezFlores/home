@@ -104,9 +104,8 @@ languages:
         enable: true
         title: "Academic Positions and Professional Experience"
         items:
-          - job: "B.Sc. in Applied Mathematics"
-            company: "Universidad del Valle de Guatemala"
-            companyUrl: ""
+          - title: "B.Sc. in Applied Mathematics"
+            affiliation: "Universidad del Valle de Guatemala"
             date: "2021 - 2025"
             content: "Applied Mathematics undergraduate student."
       publications:
@@ -133,20 +132,19 @@ languages:
         index: false
         items:
           - title: "10th Student Congress on Mathematics and Physics"
-            school:
-              name: "Universidad del Valle de Guatemala"
+            content: "Universidad del Valle de Guatemala"
             date: "2024"
+            featuredLink:
+              enable: false 
+              url: "https://congresomatematicas.uvg.edu.gt/"
           - title: "XXIII Summer School in Mathematics"
-            school:
-              name: "Centro de ciencias matemáticas, UNAM Morelia"
+            content: "Centro de ciencias matemáticas, UNAM Morelia"
             date: "2024"
           - title: "Ibero-American Olympiad in University mathematics (OIMU)"
-            school:
-              name: "Bronze Medal"
+            content: "Bronze Medal"
             date: "2023"
           - title: "Beca de liderazgo en ciencias"
-            school:
-              name: "Universidad del Valle de Guatemala"
+            content: "Universidad del Valle de Guatemala"
             date: "2021 - 2025"
       projects:
         enable: true

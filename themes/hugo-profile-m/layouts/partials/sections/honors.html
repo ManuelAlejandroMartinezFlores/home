@@ -25,25 +25,7 @@
                                     <small>{{ .date }}</small>
                                 </div>
                                 <h5 class="card-title">{{ .title }}</h5>
-                                
-                                {{ if .school.url }}
-                                <a href="{{ .school.url }}" target="_blank">
-                                    <h6>
-                                    {{ .school.name }}
-                                    </h6>
-                                </a>
-                                {{ else }}
-                                {{ .school.name }}
-                                {{ end }}
-
-                                {{ if .GPA }}
-                                <div class="py-1">
-                                    GPA:
-                                    <i>
-                                        <small>{{ .GPA }}</small>
-                                    </i> 
-                                </div>
-                                {{ end }}
+                                {{ .name }}
                                 <div class="py-1 honors-content">
                                     {{ .content | markdownify}}
                                 </div>
