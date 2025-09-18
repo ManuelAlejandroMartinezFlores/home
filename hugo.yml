@@ -1,8 +1,11 @@
 
-# baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://manuelalejandro-martinezflores.com"
 languageCode: "en-us"
 title: "Manuel Martinez"
 theme: hugo-profile-m
+sitemap:
+  changefreq: "weekly"
+  priority: 1
 
 defaultContentLanguage: en
 
@@ -39,16 +42,16 @@ languages:
         textLinkColor: "#303090"
         backgroundColor: "#eeefef"
         secondaryBackgroundColor: "#64ffda1a"
-        primaryColor: "#303090"
+        primaryColor: "#304070"
         secondaryColor: "#f8f9fa"
         darkmode:
           textColor: "#e4e6eb"
-          secondaryTextColor: "#b0b3b8"
+          secondaryTextColor: "#b4b6bb"
           textLinkColor: "#ccddff"
           backgroundColor: "#001020"
-          secondaryBackgroundColor: "#212635"
-          primaryColor: "#eeeeff"
-          secondaryColor: "#212635"
+          secondaryBackgroundColor: "#ffffff"
+          primaryColor: "#ddddee"
+          secondaryColor: "#152030"
       navbar:
         align: ms-auto
         # brandLogo: images/torus-c.svg
@@ -104,100 +107,113 @@ languages:
         enable: true
         title: "Academic Positions and Professional Experience"
         items:
+          - title: "Young Researcher"
+            affiliation: "International Community of Mathematicians (ICMAM) Latin America"
+            date: "Mar 2025 - present"
+            content: |-
+              Researched the continuity properties of toroidal pseudo-differential operators on function spaces such as (weighted) Lebesgue spaces, Hardy spaces, Sobolev spaces, and Besov spaces. Advised by <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
+          - title: "Research Intern"
+            affiliation: "Center of Studies in Applied Informatics - Universidad del Valle de Guatemala"
+            date: "Feb 2025 - present"
+            content: |-
+              Implementing algorithms to do operations on Linear Graphs and developing models to extract information on Linear Graphs.
+          - title: "High School Math Teacher"
+            affiliation: "Village School"
+            date: "Jul 2024 - Jun 2025"
+            content: |-
+              Planning and executing 25 hours per week of classes for three sections of Geometry and one of Statistics for a total of around 50 students. Evaluation and reinforcement of students and responsible for reporting to parents.
+          - title: "Assistant Professor"
+            affiliation: "Universidad del Valle de Guatemala"
+            date: "Jan 2022 - present"
+            content: |-
+              Answered questions and graded assignments and exams for students in: Calculus III (vector calculus) for two semesters, Physics II (rotational dynamics) for one semester, Differential Equations II (partial differential equations) for one semester and Analysis of the Real Variable I (continuity and differentiation of real functions) for one semester.
+          - title: "Laboratory Assistant"
+            affiliation: "Universidad del Valle de Guatemala"
+            date: "Jun 2022 - Jun 2024"
+            content: |-
+              Prepared equipment for laboratory experiments, demonstrated their correct execution, and graded laboratory reports for Physics I (linear dynamics) and Physics II (rotational dynamics).
           - title: "B.Sc. in Applied Mathematics"
             affiliation: "Universidad del Valle de Guatemala"
             date: "2021 - 2025"
-            content: "Applied Mathematics undergraduate student."
+            content: "Applied Mathematics undergraduate student (Average 97/100). Expected graduation: December 2025."
       publications:
         enable: true
         title: "Scientific Publications"
         items:
-          - title: "Boundedness of pseudo-differential operators on Hardy spaces"
+          - title: "Estimates for pseudo-differential operators on the torus revisited. I"
             content: |-
-              (2025) Submitted. With: Duván Cardona. Study on H^p and L^p estimates for pseudo-differential operators on the torus.
-            links:
-              - name: arXiv
-                url: https://arxiv.org/abs/2505.01573
+              (2025) With: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. To appear in Journal of Mathematical Analysis and Applications. <br> In this paper we prove \(L^p\)-estimates for Hörmander classes of pseudo-differential operators on the torus \(\mathbb{T}^n\). The results are presented in the context of the global symbolic calculus of Ruzhansky and Turunen on \(\mathbb{T}^n\times\mathbb{Z}^n\) by using the discrete Fourier analysis on the torus which extends the usual \((\rho,\delta)\)-Hörmander classes on \(\mathbb{T}^n\). The main results extend Álvarez and Hounie's method for \(\mathbb{R}^n\) to the torus, and Fefferman's \(L^p\)-boundedness theorem in the toroidal setting allowing the condition \(\delta\geq\rho\). When \(\delta \leq \rho\), our results recover the available estimates in the literature.
+            featured:
+              name: DOI
+              link: https://doi.org/10.1016/j.jmaa.2025.129959
+          - title: "Boundedness of pseudo-differential operators on the torus via kernel estimates"
+            content: |-
+              (2025) With: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. To appear in Trends in Mathematics, Birkhäuser.
+          - title: "Estimates for pseudo-differential operators on the torus revisited. II"
+            content: |-
+              (2025) With: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Submitted for review. <br> In this paper we continue our program of revisiting the new aspects about the boundedness properties of pseudo-differential operators on the torus. Here we prove \(H^p\)-\(L^p\) and \(H^p\)-estimates for Hörmander classes of pseudo-differential operators on the torus \(\mathbb{T}^n\) for \(p\leq 1\). The results are presented in the context of the global symbolic analysis developed by Ruzhansky and Turunen on \(\mathbb{T}^n \times \mathbb{Z}^n\) by using the discrete Fourier analysis, which extends the \((\rho, \delta)\)-Hörmander classes on \(\mathbb{T}^n\) defined by local coordinate systems. These results extend those proved by Álvarez and Hounie for the Euclidean case, considering even the case \(\rho\leq\delta\).
+            featured:
+              name: arXiv
+              link: https://arxiv.org/abs/2505.01573
+          - title: "Boundedness of toroidal pseudo-differential operators on Hardy spaces"
+            content: |-
+              (2025) With: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. To appear in Trends in Mathematics, Birkhäuser.
+          - title: "Estimates for pseudo-differential operators on the torus revisited. III"
+            content: |-
+              (2025) With: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>. Submitted for review. <br> This paper finishes  the goal of the authors started in two previous manuscripts dedicated to revisiting the continuity properties of toroidal pseudo-differential operators with symbols in the Hörmander classes. Here we prove pointwise estimates in terms of the Fefferman-Stein sharp maximal function and of the Hardy-Littlewood maximal function. Combining these estimates with the properties of  Muckenhoupt's weight class \(A_p\) we obtain boundedness theorems for pseudo-differential operators between weighted Lebesgue spaces on the torus \(L^p(w)\). These results are given in the context of the global symbolic analysis defined on \(\mathbb{T}^n\times \mathbb{Z}^n\) as developed by Ruzhansky and Turunen by using discrete Fourier analysis, and extend those of Park and Tomita available in the Euclidean case.   Moreover, we include continuity results on Sobolev spaces \(W^s_p\) and on Besov spaces \(B^s_{p,q}\) on the torus. Our techniques are taken from Park and Tomita and we consider its toroidal extension here for the completeness of the boundedness of toroidal pseudo-differential operators with respect to the current literature.
+            featured:
+              name: arXiv
+              link: https://arxiv.org/abs/2508.13338
       extension:
         enable: true
         title: "Scientific Extension"
         items:
-          - title: "Seminar: Discrete Fourier Analysis and Applications"
+          - title: "Mexican Mathematical Society Congress 2025"
             content: |-
-              Invited seminar at Universidad del Valle de Guatemala on applications of discrete Fourier analysis.
-            url: "#"
+              Speaker (in preparation) with the research talk "Pseudo-differential operators on the torus", presenting work with Duván Cardona.
+          - title: "Latinamerican Seminar of Mathematics UMALCA-ICMAM"
+            content: |-
+              Organizing committee member.
+          - title: "Newsletter UMALCA-ICMAM"
+            content: |-
+              Editorial board member.
+          - title: "ICMAM Satellite Conference in Analysis and PDE"
+            content: |-
+              Junior organizing committee member.
+          - title: "International Community of Mathematicians (ICMAM) Latin America"
+            content: |-
+              Scientific board member and scientific committee member. Updating and maintaining ICMAM Central America and Caribbean's website. Supporting the coordination of satellite congress.
+          - title: "10th Student Congress on Mathematics and Physics"
+            content: |-
+              Speaker with the informative talk "Limits", exploring fundamental definitions of Category Theory.
       honors:
         enable: true
         title: "Awards, Honors and Scholarships"
-        index: false
         items:
-          - title: "10th Student Congress on Mathematics and Physics"
-            content: "Universidad del Valle de Guatemala"
-            date: "2024"
-            featuredLink:
-              enable: false 
-              url: "https://congresomatematicas.uvg.edu.gt/"
+          - title: "EMALCA - elENA X - Argentina 2025"
+            content: "Scholarship recipient for school on Cluster Algebras, Computational Commutative Algebra, Ehrhart Theory, Persistent Homology, Lie Transformers, Representations of Finite Groups, Deformation of Algebras and Hochshild Cohomology"
+            date: "2025"
+          - title: "EMALCA - Ecuador 2025"
+            content: "Scholarship recipient for school on Differential Galois Theory, Numerical methods for Dynamical Systems, Clifford Algebras, and Graph Theory"
+            date: "2025"
+          - title: "EMALCA - Honduras 2025"
+            content: "Scholarship recipient for school on Control Theory, Statistical Learning, High dimensional Statistics and Integer optimization"
+            date: "2025"
+          - title: "Academic Merit Honor"
+            content: "Universidad del Valle de Guatemala - Awarded for obtaining an average greater than 95/100"
+            date: "2021, 2022, 2023, 2024"
           - title: "XXIII Summer School in Mathematics"
-            content: "Centro de ciencias matemáticas, UNAM Morelia"
+            content: "Centro de ciencias matemáticas, UNAM Morelia - Scholarship recipient for school on Geometric Group Theory, Maps on surfaces, Algebraic counting methods, Algebraic geometry, Topological Data Analysis"
             date: "2024"
           - title: "Ibero-American Olympiad in University mathematics (OIMU)"
             content: "Bronze Medal"
             date: "2023"
-          - title: "Beca de liderazgo en ciencias"
-            content: "Universidad del Valle de Guatemala"
-            date: "2021 - 2025"
-      projects:
-        enable: true
-        items:
-          - title: Boundedness of pseudo-differential operators on Hardy spaces
-            content: |-
-              (2025) Submitted. With: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a> <br> In this paper we investigate \\(H^p\\)-\\(L^p\\)- and \\(H^p\\)-estimates for toroidal pseudo-differential operators with symbols in the \\((\rho,\delta)\\)-H\"ormander classes defined on the torus. Our results are framed in the context of the toroidal symbolic calculus developed by Michael Ruzhansky and Ville Turunen. Here, we extend the methods of Álvarez and Hounie from \\(R^n\\) to the torus, which allow us to consider even the case \\(\delta \\geq \\rho\\). In order to obtain these properties in the context of toroidal pseudo-differential operators, we extend \'Alvarez and Milmans continuity results for the more general case of operators with operator-valued kernel in the context of the torus.
-            badges:
-              - "Periodic pseudo-differential operators"
-              - "Discrete Fourier Analysis"
-          - title: Boundedness of pseudo-differential operators on the torus revisited. II
-            content: |-
-              (2025) Submitted. With: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a> <br> In this paper we continue our program of revisiting the new aspects about the boundedness properties of pseudo-differential operators on the torus. Here we prove \\(H^p\\)-\\(L^p\\) and \\(H^p\\)-estimates for H\"ormander classes of pseudo-differential operators on the torus \\(\\mathbb{T}^n\\) for \\(p\\leq 1\\). The results are presented in the context of the global symbolic analysis developed by Ruzhansky and Turunen on \\(\\mathbb{T}^n \\times \\mathbb{Z}^n\\) by using the discrete Fourier analysis, which extends the \\((\rho, \delta)\\)-H\"ormander classes on \\(\\mathbb{T}^n\\) defined by local coordinate systems. These results extend those proved by \'Alvarez and Hounie for the Euclidean case, considering even the case \\rho\\leq\\delta.
-            featured:
-              name: "See in arxiv.org"
-              link: https://arxiv.org/abs/2505.01573
-            badges:
-              - "Periodic pseudo-differential operators"
-              - "Discrete Fourier Analysis"
-            links:
-              - icon: "arxiv"
-                url: https://arxiv.org/abs/2505.01573
-          - title: Boundedness of pseudo-differential operators on the torus via kernel estimates
-            content: |-
-              (2025) To appear in Trends in Mathematics. With: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a> <br> In this paper we investigate \\(L^p\\)-estimates for H\"ormander classes of pseudo-differential operators on the torus \\(\\mathbb{T}^n\\). Our results are framed within the global symbolic calculus developed by Ruzhansky and Turunen on \\(\\mathbb{T}^n \\times \\mathbb{Z}^n\\), by using the discrete Fourier analysis on the torus. This approach extends the classical \\((\rho, \\delta)\\)-H\"ormander classes to the toroidal setting. The main contributions of this work generalize the method of Álvarez and Hounie for \\(\\mathbb{R}^n\\) to the torus, while also extending Fefferman's \\(L^p\\)-boundedness theorem to the toroidal context, even in cases where \\(\\delta \\\geq \\\rho\\). When \\(\\delta \\\leq \\\rho\\), our results align with and recover existing estimates found in the literature.
-            badges:
-              - "Periodic pseudo-differential operators"
-              - "Discrete Fourier Analysis"
-          - title: Estimates for pseudo-differential operators on the torus revisited. I
-            content: |-
-              (2025) Submitted. With: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a> <br> In this paper we prove \\(L^p\\)-estimates for H\"ormander classes of pseudo-differential operators on the torus \\(\\mathbb{T}^n\\). Our results are framed within the global symbolic calculus developed by Ruzhansky and Turunen on \\(\\mathbb{T}^n \\times \\mathbb{Z}^n\\), by using the discrete Fourier analysis on the torus. This approach extends the classical \\((\rho, \\delta)\\)-H\"ormander classes to the toroidal setting. The main contributions of this work generalize the method of Álvarez and Hounie for \\(\\mathbb{R}^n\\) to the torus, while also extending Fefferman's \\(L^p\\)-boundedness theorem to the toroidal context, even in cases where \\(\\delta \\\geq \\\rho\\). When \\(\\delta \\\leq \\\rho\\), our results align with and recover existing estimates found in the literature.
-            # image: /images/sigma.svg
-            featured:
-              name: "See in arxiv.org"
-              link: https://arxiv.org/abs/2502.20575
-            badges:
-              - "Periodic pseudo-differential operators"
-              - "Discrete Fourier Analysis"
-          - title: Undergraduate thesis
-            content: |-
-              Advisor: <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
-            badges:
-              - "Periodic pseudo-differential operators"
-              - "Discrete Fourier Analysis"
-          - title: "Linear Graphs to solve multi-physics problems"
-            content: |-
-              We use In this repository we implement the ideas discussed in <a href="https://web.mit.edu/2.151/www/Handouts/EqFormulation.pdf" target="_blank">this document from MIT</a> where they establish a correspondence between physical systems and graphs. Then we implement algorithms to generate the state equations.
-            featured:
-              name: "See more"
-              link: https://github.com/ManuelAlejandroMartinezFlores/LinearGraph-NormalTree
-            badges:
-              - "Linear graphs"
-              - "Multi-physics"
+            featuredLink:
+              enable: false 
+              url: "https://congresomatematicas.uvg.edu.gt/"
+          - title: "Science Leadership Scholarship"
+            content: "Universidad del Valle de Guatemala - Scholarship to study Applied Mathematics"
+            date: "2020 - 2025"
       contact:
         enable: true
         title: "Contact"
@@ -323,39 +339,14 @@ outputs:
     - "HTML"
     - "RSS"
 
-# mediaTypes:
-#   application/pdf:
-#     suffixes: ["pdf"]
+privacy:
+  googleAnalytics:
+    disable: false
+    respectDoNotTrack: true
+  youtube:
+    privacyEnhanced: true
 
-# outputFormats:
-#   PDF:
-#     mediaType: "application/pdf"
-#     isPlainText: false
-#     isHTML: false
-
-
-# pagination:
-#   pagerSize: 3
-
-# markup:
-#   goldmark:
-#     renderer:
-#       unsafe: true
-#   math:
-#     enable: true
-
-
-
-# #customScripts: -| # You can add custom scripts which will be added before </body> tag
-# #  <script type="text/javascript"><!-- any script here --></script>
-# copyright: "All rights reserved"
-# pageNotFound: "Page not found"
-# emailText: "Check out this site"
-
-# datesFormat:
-#   article: "Jan 2, 2006"
-#   articleList: "Jan 2, 2006"
-#   articleRecent: "Jan 2, 2006"
-
-  #customScripts: -| # You can add custom scripts which will be added before </body> tag
-  #  <script type="text/javascript"><!-- any script here --></script>
+# Optional: Configure which content types to include/exclude from sitemap
+taxonomies:
+  tag: "tags"
+  category: "categories"
