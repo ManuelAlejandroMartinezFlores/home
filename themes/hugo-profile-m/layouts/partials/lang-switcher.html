@@ -1,8 +1,8 @@
-<ul class="nav lang-switcher align-items-center">
+<ul class="navbar-nav">
   {{ $currentLang := .Site.Language.Lang }}
   {{ range .Site.Languages }}
     {{ $isCurrentLang := eq .Lang $currentLang }}
-    <li class="nav-item px-1">
+    <li class="nav-item">
       {{ if $isCurrentLang }}
         <span class="nav-link active" aria-current="page">{{ .LanguageName }}</span>
       {{ else }}

@@ -100,7 +100,7 @@ languages:
           enable: true
           name: "Resume"
           newPage: false
-          url: files/ManuelMartinezFloresCV_eng.pdf
+          url: /files/ManuelMartinezFloresCV_eng.pdf
         socialLinks:
           fontAwesomeIcons:
             - icon: fab fa-github
@@ -314,7 +314,7 @@ languages:
           enable: true
           name: "Currículum"
           newPage: false
-          url: files/ManuelMartinezFloresCV_eng.pdf
+          url: /files/ManuelMartinezFloresCV_eng.pdf
         socialLinks:
           fontAwesomeIcons:
             - icon: fab fa-github
