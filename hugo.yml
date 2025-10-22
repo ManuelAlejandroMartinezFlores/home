@@ -174,7 +174,11 @@ languages:
         items:
           - title: "Mexican Mathematical Society Congress 2025"
             content: |-
-              Speaker (in preparation) with the research talk "Pseudo-differential operators on the torus", presenting work with Duván Cardona.
+              Speaker with the research talk "Pseudo-differential operators on the torus", presenting work with Duván Cardona.
+            featuredLink:
+              enable: true 
+              name: Slides
+              url: /files/presentacionSMM.pdf
           - title: "Latinamerican Seminar of Mathematics UMALCA-ICMAM"
             content: |-
               Organizing committee member.
@@ -388,7 +392,11 @@ languages:
         items:
           - title: "Congreso de la Sociedad Matemática Mexicana 2025"
             content: |-
-              Ponente (en preparación) con la charla de investigación "Operadores pseudo-diferenciales en el toro", presentando trabajo con Duván Cardona.
+              Ponente con la charla de investigación "Operadores pseudo-diferenciales en el toro", presentando trabajo con Duván Cardona.
+            featuredLink:
+              enable: true 
+              name: Slides
+              url: /files/presentacionSMM.pdf
           - title: "Seminario Latinoamericano de Matemáticas UMALCA-ICMAM"
             content: |-
               Miembro del comité organizador.
