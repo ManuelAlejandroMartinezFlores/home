@@ -178,7 +178,7 @@ languages:
             featuredLink:
               enable: true 
               name: Slides
-              url: /files/presentacionSMM.pdf
+              url: /files/PresentacionSMM.pdf
           - title: "Latinamerican Seminar of Mathematics UMALCA-ICMAM"
             content: |-
               Organizing committee member.
@@ -396,7 +396,7 @@ languages:
             featuredLink:
               enable: true 
               name: Slides
-              url: /files/presentacionSMM.pdf
+              url: /files/PresentacionSMM.pdf
           - title: "Seminario Latinoamericano de Matemáticas UMALCA-ICMAM"
             content: |-
               Miembro del comité organizador.
