@@ -139,7 +139,12 @@ languages:
           - title: "B.Sc. in Applied Mathematics"
             affiliation: "Universidad del Valle de Guatemala"
             date: "2021 - 2025"
-            content: "Applied Mathematics undergraduate student (Average 97/100). Expected graduation: December 2025."
+            content: |-
+              Applied Mathematics undergraduate student (Average 97/100). Expected graduation: December 2025. Undergraduate thesis under <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
+            featuredLink:
+            enable: true
+            name: Thesis 
+            url: /files/ContinuidadOperadoresPseudoDiferencialesToro.pdf
       publications:
         enable: true
         title: "Scientific Publications"
@@ -172,13 +177,13 @@ languages:
         enable: true
         title: "Scientific Extension"
         items:
-          - title: "Continuidad de operadores pseudo-diferenciales en el toro"
+          - title: "Continuidad de operadores pseudo-diferenciales en el toro. Thesis Defense"
             content: |-
               Undergraduate thesis presenting my work with <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>.
             featuredLink:
               enable: true
-              name: Document 
-              url: /files/ContinuidadOperadoresPseudoDiferencialesToro.pdf
+              name: Slides 
+              url: /files/PresentacionTesis.pdf
           - title: "Mexican Mathematical Society Congress 2025"
             content: |-
               Speaker with the research talk "Pseudo-differential operators on the torus", presenting work with Duván Cardona.
@@ -364,7 +369,12 @@ languages:
           - title: "Licenciatura en Matemática Aplicada"
             affiliation: "Universidad del Valle de Guatemala"
             date: "2021 - 2025"
-            content: "Estudiante de pregrado en Matemática Aplicada (Promedio 97/100). Graduación esperada: Diciembre 2025."
+            content: |-
+              Estudiante de pregrado en Matemática Aplicada (Promedio 97/100). Graduación esperada: Diciembre 2025. Tesis realizada bajo <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
+            featuredLink:
+            enable: true
+            name: Tesis 
+            url: /files/ContinuidadOperadoresPseudoDiferencialesToro.pdf
       publications:
         enable: true
         title: "Publicaciones Científicas"
@@ -402,8 +412,8 @@ languages:
               Tesis de pregrado presentando el trabajo realizado con <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>.
             featuredLink:
               enable: true
-              name: Documento 
-              url: /files/ContinuidadOperadoresPseudoDiferencialesToro.pdf
+              name: Presentación 
+              url: /files/PresentacionTesis.pdf
           - title: "Congreso de la Sociedad Matemática Mexicana 2025"
             content: |-
               Ponente con la charla de investigación "Operadores pseudo-diferenciales en el toro", presentando trabajo con Duván Cardona.
