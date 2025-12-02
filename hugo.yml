@@ -172,6 +172,13 @@ languages:
         enable: true
         title: "Scientific Extension"
         items:
+          - title: "Continuidad de operadores pseudo-diferenciales en el toro"
+            content: |-
+              Undergraduate thesis presenting my work with <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>.
+            featuredLink:
+              enable: true
+              name: Document 
+              url: /files/ContinuidadOperadoresPseudoDiferencialesToro.pdf
           - title: "Mexican Mathematical Society Congress 2025"
             content: |-
               Speaker with the research talk "Pseudo-differential operators on the torus", presenting work with Duván Cardona.
@@ -390,6 +397,13 @@ languages:
         enable: true
         title: "Extensión Científica"
         items:
+          - title: "Continuidad de operadores pseudo-diferenciales en el toro"
+            content: |-
+              Tesis de pregrado presentando el trabajo realizado con <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>.
+            featuredLink:
+              enable: true
+              name: Documento 
+              url: /files/ContinuidadOperadoresPseudoDiferencialesToro.pdf
           - title: "Congreso de la Sociedad Matemática Mexicana 2025"
             content: |-
               Ponente con la charla de investigación "Operadores pseudo-diferenciales en el toro", presentando trabajo con Duván Cardona.

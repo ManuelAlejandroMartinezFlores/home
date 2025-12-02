@@ -27,7 +27,7 @@
                                 <h5 class="card-title">{{ .title }}</h5>
                                 {{ .name }}
                                 <div class="py-1 honors-content">
-                                    {{ .content | markdownify}}
+                                    {{ .content | safeHTML}}
                                 </div>
 
                                 {{ if .featuredLink.enable }}
