@@ -142,9 +142,9 @@ languages:
             content: |-
               Applied Mathematics undergraduate student (Average 97/100). Expected graduation: December 2025. Undergraduate thesis under <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
             featuredLink:
-            enable: true
-            name: Thesis 
-            url: /files/ContinuidadOperadoresPseudoDiferencialesToro.pdf
+              enable: true
+              name: Thesis 
+              url: /files/ContinuidadOperadoresPseudoDiferencialesToro.pdf
       publications:
         enable: true
         title: "Scientific Publications"
@@ -372,9 +372,9 @@ languages:
             content: |-
               Estudiante de pregrado en Matemática Aplicada (Promedio 97/100). Graduación esperada: Diciembre 2025. Tesis realizada bajo <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
             featuredLink:
-            enable: true
-            name: Tesis 
-            url: /files/ContinuidadOperadoresPseudoDiferencialesToro.pdf
+              enable: true
+              name: Tesis 
+              url: /files/ContinuidadOperadoresPseudoDiferencialesToro.pdf
       publications:
         enable: true
         title: "Publicaciones Científicas"
