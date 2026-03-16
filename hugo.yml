@@ -91,7 +91,7 @@ languages:
         title: "Manuel Alejandro Martínez Flores."
         subtitle: "Mathematician"
         content: |-
-          I am an Applied Mathematics undergraduate student from Guatemala. Right now I am interested in working in harmonic analysis, 
+          I am a mathematician from Guatemala. Right now I am interested in working in harmonic analysis, 
           specificaly in pseudo-differential operators.
         image: /images/Foto.jpg
         bottomImage:
@@ -126,21 +126,21 @@ languages:
             date: "Jul 2024 - Jun 2025"
             content: |-
               Planning and executing 25 hours per week of classes for three sections of Geometry and one of Statistics for a total of around 50 students. Evaluation and reinforcement of students and responsible for reporting to parents.
-          - title: "Assistant Professor"
+          - title: "Teaching Assistant"
             affiliation: "Universidad del Valle de Guatemala"
-            date: "Jan 2022 - present"
+            date: "Jan 2023 - Dec 2025"
             content: |-
               Answered questions and graded assignments and exams for students in: Calculus III (vector calculus) for two semesters, Physics II (rotational dynamics) for one semester, Differential Equations II (partial differential equations) for one semester and Analysis of the Real Variable I (continuity and differentiation of real functions) for one semester.
           - title: "Laboratory Assistant"
             affiliation: "Universidad del Valle de Guatemala"
-            date: "Jun 2022 - Jun 2024"
+            date: "Jun 2023 - Jun 2024"
             content: |-
               Prepared equipment for laboratory experiments, demonstrated their correct execution, and graded laboratory reports for Physics I (linear dynamics) and Physics II (rotational dynamics).
           - title: "B.Sc. in Applied Mathematics"
             affiliation: "Universidad del Valle de Guatemala"
             date: "2021 - 2025"
             content: |-
-              Applied Mathematics undergraduate student (Average 97/100). Expected graduation: December 2025. Undergraduate thesis under <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
+              Applied Mathematics undergraduate student (Average 97/100). Undergraduate thesis under <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
             featuredLink:
               enable: true
               name: Thesis 
@@ -177,6 +177,13 @@ languages:
         enable: true
         title: "Scientific Extension"
         items:
+          - title: "ISSAC-ICMAM Conference of Analysis in Developing Countries"
+            content: |-
+              Organizing committee. Presented my work with <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>.
+            featuredLink:
+              enable: true
+              name: Slides 
+              url: /files/ISAAC-ICMAM-2026.pdf
           - title: "Continuidad de operadores pseudo-diferenciales en el toro. Thesis Defense"
             content: |-
               Undergraduate thesis presenting my work with <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>.
@@ -210,6 +217,9 @@ languages:
         enable: true
         title: "Awards, Honors and Scholarships"
         items:
+          - title: "Instituto Matemática Pura e Aplicada (IMPA)"
+            content: "Summer school participant in the courses of Differential Topology and Introduction to Dispersive Equations"
+            date: "2026"
           - title: "EMALCA - elENA X - Argentina 2025"
             content: "Scholarship recipient for school on Cluster Algebras, Computational Commutative Algebra, Ehrhart Theory, Persistent Homology, Lie Transformers, Representations of Finite Groups, Deformation of Algebras and Hochshild Cohomology"
             date: "2025"
@@ -321,7 +331,7 @@ languages:
         title: "Manuel Alejandro Martínez Flores."
         subtitle: "Matemático"
         content: |-
-          Soy un estudiante de pregrado en Matemática Aplicada de Guatemala. Actualmente estoy interesado en trabajar en análisis armónico, 
+          Soy un matemático de Guatemala. Actualmente estoy interesado en trabajar en análisis armónico, 
           específicamente en operadores pseudo-diferenciales.
         image: /images/Foto.jpg
         bottomImage:
@@ -358,19 +368,19 @@ languages:
               Planificando y ejecutando 25 horas semanales de clases para tres secciones de Geometría y una de Estadística para un total de alrededor de 50 estudiantes. Evaluación y refuerzo de estudiantes y responsable de reportes a padres de familia.
           - title: "Profesor auxiliar"
             affiliation: "Universidad del Valle de Guatemala"
-            date: "Ene 2022 - presente"
+            date: "Ene 2023 - Dec 2025"
             content: |-
               Respondí preguntas y califiqué tareas y exámenes para estudiantes en: Cálculo III (cálculo vectorial) durante dos semestres, Física II (dinámica rotacional) durante un semestre, Ecuaciones Diferenciales II (ecuaciones diferenciales en derivadas parciales) durante un semestre y Análisis de la Variable Real I (continuidad y diferenciación de funciones reales) durante un semestre.
           - title: "Asistente de laboratorio"
             affiliation: "Universidad del Valle de Guatemala"
-            date: "Jun 2022 - Jun 2024"
+            date: "Jun 2023 - Jun 2024"
             content: |-
               Preparé equipo para experimentos de laboratorio, demostré su ejecución correcta y califiqué reportes de laboratorio para Física I (dinámica lineal) y Física II (dinámica rotacional).
           - title: "Licenciatura en Matemática Aplicada"
             affiliation: "Universidad del Valle de Guatemala"
             date: "2021 - 2025"
             content: |-
-              Estudiante de pregrado en Matemática Aplicada (Promedio 97/100). Graduación esperada: Diciembre 2025. Tesis realizada bajo <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
+              Estudiante de pregrado en Matemática Aplicada (Promedio 97/100). Tesis realizada bajo <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>
             featuredLink:
               enable: true
               name: Tesis 
@@ -407,6 +417,13 @@ languages:
         enable: true
         title: "Extensión Científica"
         items:
+          - title: "ISSAC-ICMAM Conference of Analysis in Developing Countries"
+            content: |-
+              Comité organizador. Presentación de mi trabajo con <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>.
+            featuredLink:
+              enable: true
+              name: Diapositivas 
+              url: /files/ISAAC-ICMAM-2026.pdf
           - title: "Continuidad de operadores pseudo-diferenciales en el toro"
             content: |-
               Tesis de pregrado presentando el trabajo realizado con <a href="https://sites.google.com/site/duvancardonas/home" target="_blank">Duván Cardona</a>.
@@ -440,6 +457,9 @@ languages:
         enable: true
         title: "Premios, Reconocimientos y Becas"
         items:
+          - title: "Instituto Matemática Pura e Aplicada (IMPA)"
+            content: "Participante de la escuela de verano en los cursos de Toplogía Diferencial e Introducción a Ecuaciones Dispersivas"
+            date: "2026"
           - title: "EMALCA - elENA X - Argentina 2025"
             content: "Becario para la escuela sobre Álgebras de Clústeres, Álgebra Conmutativa Computacional, Teoría de Ehrhart, Homología Persistente, Transformadores de Lie, Representaciones de Grupos Finitos, Deformación de Álgebras y Cohomología de Hochschild"
             date: "2025"
