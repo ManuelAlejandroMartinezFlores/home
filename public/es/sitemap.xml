@@ -4,54 +4,54 @@
   
   
   <url>
-    <loc>http://localhost:1313/es/categories/</loc>
+    <loc>https://manuelalejandro-martinezflores.com/es/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://manuelalejandro-martinezflores.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/categories/"
+                href="https://manuelalejandro-martinezflores.com/es/categories/"
                 />
   </url>
   
   
   
   <url>
-    <loc>http://localhost:1313/es/</loc>
+    <loc>https://manuelalejandro-martinezflores.com/es/</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://manuelalejandro-martinezflores.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/"
+                href="https://manuelalejandro-martinezflores.com/es/"
                 />
   </url>
   
   
   
   <url>
-    <loc>http://localhost:1313/es/tags/</loc>
+    <loc>https://manuelalejandro-martinezflores.com/es/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://manuelalejandro-martinezflores.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/tags/"
+                href="https://manuelalejandro-martinezflores.com/es/tags/"
                 />
   </url>
   
